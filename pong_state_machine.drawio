@@ -1,11 +1,68 @@
-<mxfile host="app.diagrams.net" modified="2022-09-04T05:07:22.706Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="SOCKkVHrndq3WLNBrj2g" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-04T07:03:13.033Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="aBlz-bzv3Vm273d52NLV" version="20.2.8" type="github">
   <diagram id="BVnKUbLzUJHT2AO7Y4Lj" name="第 1 页">
-    <mxGraphModel dx="1426" dy="711" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2253" dy="711" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="chHwzuXycJwSlvuzuiYq-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=25;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="chHwzuXycJwSlvuzuiYq-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="60" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="chHwzuXycJwSlvuzuiYq-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.4;entryY=-0.05;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=25;" edge="1" parent="1" source="chHwzuXycJwSlvuzuiYq-2" target="chHwzuXycJwSlvuzuiYq-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="chHwzuXycJwSlvuzuiYq-2" value="start" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="230" y="130" width="120" height="60" as="geometry" />
+          <mxGeometry x="180" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="chHwzuXycJwSlvuzuiYq-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=25;" edge="1" parent="1" source="chHwzuXycJwSlvuzuiYq-3" target="chHwzuXycJwSlvuzuiYq-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="chHwzuXycJwSlvuzuiYq-3" value="serve" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="400" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="chHwzuXycJwSlvuzuiYq-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=25;" edge="1" parent="1" source="chHwzuXycJwSlvuzuiYq-4" target="chHwzuXycJwSlvuzuiYq-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="410" />
+              <mxPoint x="200" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="chHwzuXycJwSlvuzuiYq-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.45;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=25;" edge="1" parent="1" source="chHwzuXycJwSlvuzuiYq-4" target="chHwzuXycJwSlvuzuiYq-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="chHwzuXycJwSlvuzuiYq-4" value="play" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="260" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="chHwzuXycJwSlvuzuiYq-10" value="input: Enter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="305" y="90" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="chHwzuXycJwSlvuzuiYq-11" value="input: Enter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="305" y="320" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="chHwzuXycJwSlvuzuiYq-12" value="ball 出左边界 -&amp;gt;serve player = 1&lt;br&gt;ball 出右边界 -&amp;gt;serve player = 2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="265" width="380" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="chHwzuXycJwSlvuzuiYq-14" value="serve update:&lt;br&gt;if serve palyer 1&lt;br&gt;dx = -100&lt;br&gt;if serve player 2&lt;br&gt;dx = 100" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="520" y="85" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="chHwzuXycJwSlvuzuiYq-15" value="play阶段不关心serve哪个player&lt;br&gt;1. 判断是否碰撞, 碰撞则改变dx 或 dy&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="105" y="440" width="430" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="chHwzuXycJwSlvuzuiYq-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="chHwzuXycJwSlvuzuiYq-16" target="chHwzuXycJwSlvuzuiYq-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="chHwzuXycJwSlvuzuiYq-16" value="done" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="580" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="chHwzuXycJwSlvuzuiYq-18" value="分数超过10分" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="440" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="chHwzuXycJwSlvuzuiYq-20" value="input: Enter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="545" y="340" width="150" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
