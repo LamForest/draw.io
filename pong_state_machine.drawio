@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-04T07:03:13.033Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="aBlz-bzv3Vm273d52NLV" version="20.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-04T15:12:56.423Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="XvR65EUw5Ho4al8Wk7YK" version="20.2.8" type="github">
   <diagram id="BVnKUbLzUJHT2AO7Y4Lj" name="第 1 页">
     <mxGraphModel dx="2253" dy="711" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -44,11 +44,11 @@
         <mxCell id="chHwzuXycJwSlvuzuiYq-12" value="ball 出左边界 -&amp;gt;serve player = 1&lt;br&gt;ball 出右边界 -&amp;gt;serve player = 2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=25;" vertex="1" parent="1">
           <mxGeometry x="-170" y="265" width="380" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="chHwzuXycJwSlvuzuiYq-14" value="serve update:&lt;br&gt;if serve palyer 1&lt;br&gt;dx = -100&lt;br&gt;if serve player 2&lt;br&gt;dx = 100" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="520" y="85" width="200" height="160" as="geometry" />
+        <mxCell id="chHwzuXycJwSlvuzuiYq-14" value="serve update:&lt;br&gt;if serve palyer 1&lt;br&gt;dx = -100&lt;br&gt;if serve player 2&lt;br&gt;dx = 100&lt;br&gt;只更新dx, 不更新x&lt;br&gt;球还在原地不动" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="505" y="55" width="230" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="chHwzuXycJwSlvuzuiYq-15" value="play阶段不关心serve哪个player&lt;br&gt;1. 判断是否碰撞, 碰撞则改变dx 或 dy&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="105" y="440" width="430" height="70" as="geometry" />
+        <mxCell id="chHwzuXycJwSlvuzuiYq-15" value="play阶段不关心serve哪个player&lt;br&gt;1. 判断是否碰撞, 碰撞则改变dx 或 dy&lt;br&gt;2. 根据x y dx dy,更新x y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="105" y="425" width="430" height="100" as="geometry" />
         </mxCell>
         <mxCell id="chHwzuXycJwSlvuzuiYq-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="chHwzuXycJwSlvuzuiYq-16" target="chHwzuXycJwSlvuzuiYq-3">
           <mxGeometry relative="1" as="geometry">
