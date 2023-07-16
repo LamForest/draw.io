@@ -1,9 +1,72 @@
-<mxfile host="app.diagrams.net" modified="2023-07-16T08:31:35.889Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" version="21.4.0" etag="6j2dS2CxKJnDCUlbU30v" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-16T11:44:11.237Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="SvPlNYFNB-mGI2zxSg0r" version="21.4.0" type="github">
   <diagram name="第 1 页" id="EEyN7_L1d9EwEOdHLBwh">
-    <mxGraphModel>
+    <mxGraphModel dx="1733" dy="439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="1I8nCy4y-NXWld2Ml792-2" value="OperatorEntry" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;noLabel=0;arcSize=15;swimlaneHead=1;swimlaneFillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="350" y="170" width="440" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-4" value="OperatorName name_;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1I8nCy4y-NXWld2Ml792-2">
+          <mxGeometry y="30" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-3" value="std::array&amp;lt;KernelFunction, c10::num_runtime_entries{116}&amp;gt; dispatchTable_;&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1I8nCy4y-NXWld2Ml792-2">
+          <mxGeometry y="60" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-5" value="lookup(DispatchKeySet ks) -&amp;gt;&amp;nbsp;&lt;b&gt;KernelFunction&lt;/b&gt;&amp;amp; // 在dispatchTable_中根据 ks 查找应该被dispatch到的kernel&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1I8nCy4y-NXWld2Ml792-2">
+          <mxGeometry y="90" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-9" value="..." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1I8nCy4y-NXWld2Ml792-2">
+          <mxGeometry y="120" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-10" value="Dispatcher" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;noLabel=0;arcSize=15;swimlaneHead=1;swimlaneFillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="130" y="360" width="560" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-11" value="struct OperatorDef final {&lt;br&gt;&#x9;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;impl::OperatorEntry op;&lt;/span&gt;&lt;br&gt;}&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1I8nCy4y-NXWld2Ml792-10">
+          <mxGeometry y="30" width="560" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-13" value="LeftRight&amp;lt;ska::flat_hash_map&amp;lt;OperatorName, OperatorHandle&amp;gt;&amp;gt; operatorLookupTable_;&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1I8nCy4y-NXWld2Ml792-10">
+          <mxGeometry y="80" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-14" value="findSchemaOrThrow(...)&amp;nbsp; -&amp;gt;&amp;nbsp;OperatorHandle" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1I8nCy4y-NXWld2Ml792-10">
+          <mxGeometry y="110" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-30" value="call(op : OperatorHandle, args) {&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1. TODO: dispatchkeyset怎么得到的？应该是tls + tensor的&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2. KernelFunction&amp;amp; kernel = op.operatorDef_-&amp;gt;op.lookup(dispatchKeySet); //从OperatorEntry中查找kernel&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.&amp;nbsp; // 调用kernel&lt;br&gt;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1I8nCy4y-NXWld2Ml792-10">
+          <mxGeometry y="140" width="560" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-16" value="OperatorHandle" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;noLabel=0;arcSize=15;swimlaneHead=1;swimlaneFillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="180" y="610" width="350" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-17" value="Dispatcher::OperatorDef* operatorDef_;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1I8nCy4y-NXWld2Ml792-16">
+          <mxGeometry y="30" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-33" value="call(args) {&lt;br&gt;Dispatcher::singleton().call(*this, args) //又回到了Dispatcher中&lt;br&gt;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1I8nCy4y-NXWld2Ml792-16">
+          <mxGeometry y="60" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-26" value="THPVariable_conv2d(...) -&amp;gt; PyObject *" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="220" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-27" value="at::conv2d_symint(...) -&amp;gt; at::Tensor" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="270" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1I8nCy4y-NXWld2Ml792-29" target="1I8nCy4y-NXWld2Ml792-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-29" value="at::_ops::conv2d::call -&amp;gt; at::Tensor&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1.op : OperatorHandle = Dispatcher().&lt;/span&gt;findSchemaOrThrow(aten::conv2d) // 找到op对应的OperatorHandle&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;2. op.call(...)&amp;nbsp;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-350" y="380" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-35" value="KernelFunction" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="390" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-36" value="BoxedKernel boxed_kernel_func_;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1I8nCy4y-NXWld2Ml792-35">
+          <mxGeometry y="30" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-37" value="void* unboxed_kernel_func_;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1I8nCy4y-NXWld2Ml792-35">
+          <mxGeometry y="60" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-38" value="void* sym_unboxed_kernel_func_;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1I8nCy4y-NXWld2Ml792-35">
+          <mxGeometry y="90" width="240" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
