@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-17T10:10:01.590Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="fTSpXpc2rehExkkde3q9" version="21.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-17T10:32:31.753Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="o5MUgklY4RDr9NFfNCLM" version="21.4.0" type="github">
   <diagram name="第 1 页" id="EEyN7_L1d9EwEOdHLBwh">
     <mxGraphModel dx="1877" dy="1752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -682,8 +682,41 @@
         <mxCell id="1I8nCy4y-NXWld2Ml792-492" value="执行Autograd的处理，一般会通过call或redispatch去调用具体的计算kernel。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="2420" y="1134" width="232" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="1I8nCy4y-NXWld2Ml792-493" value="&lt;h1&gt;offsetsAndMasks()&lt;/h1&gt;&lt;div&gt;返回值为 std::array&amp;lt;FunctionalityOffsetAndMask, num_functionality_keys{46}&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如上所述，dispatchTable_实际上是二维数组，且第二维的长度可变；所以，运行时使用dispatchTable_比较不方便。offset用于解决这个问题，它代表第二维数组的起始地址&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1997.5" y="20" width="430" height="210" as="geometry" />
+        <mxCell id="1I8nCy4y-NXWld2Ml792-493" value="&lt;h1&gt;offsetsAndMasks()&lt;/h1&gt;&lt;div&gt;返回值为 std::array&amp;lt;FunctionalityOffsetAndMask, num_functionality_keys{46}&amp;gt;&lt;/div&gt;&lt;div&gt;由&amp;nbsp;initializeFunctionalityOffsetsAndMasks()进行初始化&lt;/div&gt;&lt;div&gt;&lt;b&gt;offsets&lt;/b&gt;&lt;/div&gt;&lt;div&gt;如上所述，dispatchTable_实际上是二维数组，且第二维的长度可变；所以，运行时使用dispatchTable_比较不方便。offset用于解决这个问题，它代表第二维数组的起始地址。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;masks&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2481" y="-170" width="430" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-495" value="0000 0000 0000 0000 0000 0000 0&lt;font color=&quot;#006633&quot;&gt;1&lt;/font&gt;00 0000 0000 0000 0000 0000 &lt;font color=&quot;#0000cc&quot;&gt;1&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2450" y="60" width="520" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-496" value="000 0000 0000 0000" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="2886" y="60" width="124" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-497" value="AutogradFunctionality" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#006633;" vertex="1" parent="1">
+          <mxGeometry x="2690" y="40" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-501" value="Dense" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000099;" vertex="1" parent="1">
+          <mxGeometry x="2860" y="40" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-502" value="" style="endArrow=none;html=1;rounded=0;exitX=0.147;exitY=1.18;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2520.4399999999996" y="90.40000000000009" as="sourcePoint" />
+            <mxPoint x="2894" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-504" value="前49（46？）位代表Functionality Keys" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2590" y="90" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-505" value="后15位代表Backend" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="2920" y="90" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-506" value="" style="endArrow=none;html=1;rounded=0;fontColor=#FF0000;strokeColor=#FF0000;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2895" y="90" as="sourcePoint" />
+            <mxPoint x="3099" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-507" value="DispatchKeySet共64位" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2730" y="10" width="230" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
