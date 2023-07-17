@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-17T10:01:41.066Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="ajmZYBQdzhNwHnfHxe09" version="21.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-17T10:08:00.167Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="1ZEkQpLVtyMlCeDvakjd" version="21.4.0" type="github">
   <diagram name="第 1 页" id="EEyN7_L1d9EwEOdHLBwh">
     <mxGraphModel dx="1493" dy="1548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -673,8 +673,17 @@
         <mxCell id="1I8nCy4y-NXWld2Ml792-489" value="下一个dispatchkey为&lt;b&gt;EndOfFunctionalityKeys&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="2068" y="1300" width="310" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="1I8nCy4y-NXWld2Ml792-490" value="&lt;h1&gt;dispatchTable_&lt;/h1&gt;&lt;div&gt;std::array&amp;lt;KernelFunction, c10::num_runtime_entries{116}&amp;gt; dispatchTable_;&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;这是一个长度为116的一维的静态数组，由下面的116个蓝色方框组成，每个代表一个kernel。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;116个kernel又可以划分为46个分组，每个分组属于一个Functionality。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;其中5个Functionality称为PerBackendFunctionalityKey，拥有&lt;span style=&quot;background-color: initial;&quot;&gt;15个kernels，分别对应每个backend。另外41个Functionality只有1个kernel，通常是与backend无关的Functionality。&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="2040" y="-90" width="430" height="210" as="geometry" />
+        <mxCell id="1I8nCy4y-NXWld2Ml792-490" value="&lt;h1&gt;dispatchTable_&lt;/h1&gt;&lt;div&gt;std::array&amp;lt;KernelFunction, c10::num_runtime_entries{116}&amp;gt; dispatchTable_;&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;这是一个长度为116的一维的静态数组，由下面的116个蓝色方框组成，每个代表一个kernel。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;116个kernel又可以划分为46个分组，每个分组属于一个Functionality。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;其中5个Functionality称为PerBackendFunctionalityKey，拥有&lt;span style=&quot;background-color: initial;&quot;&gt;15个kernels，分别对应每个backend。另外41个Functionality只有1个kernel，通常是与backend无关的Functionality。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;标注了一些重要的key，比如&lt;b&gt;Dense&lt;/b&gt;，&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2000" y="-190" width="430" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-491" value="执行具体的计算，op kernel一般注册在这里。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2370" y="220" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-492" value="执行Autograd的处理，一般会通过call或redispatch去调用具体的计算kernel。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2420" y="1134" width="232" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1I8nCy4y-NXWld2Ml792-493" value="&lt;h1&gt;offsetsAndMasks()&lt;/h1&gt;&lt;div&gt;返回值为 std::array&amp;lt;FunctionalityOffsetAndMask, num_functionality_keys{46}&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1997.5" y="20" width="430" height="210" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
