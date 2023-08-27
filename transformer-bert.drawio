@@ -1,9 +1,48 @@
-<mxfile host="app.diagrams.net" modified="2023-08-27T11:56:41.054Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" version="21.6.8" etag="_eWfzoLtg0y50MVQFfeK" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-27T12:07:13.120Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="GyZNQcxtNSKG44HVgsWs" version="21.6.8" type="github">
   <diagram name="第 1 页" id="M_lp6r22NxMa7Wf6T6G-">
-    <mxGraphModel>
+    <mxGraphModel dx="1050" dy="1747" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-2" value="Encoder" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="124" y="30" width="636" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-11" value="W_Q&lt;br&gt;(512, 64)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-2">
+          <mxGeometry x="126" y="460" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-14" value="W_K" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-2">
+          <mxGeometry x="306" y="470" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-15" value="W_V" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-2">
+          <mxGeometry x="496" y="470" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-3" value="Positional Encoding DIM = 512&lt;br&gt;(sin cos)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="124" y="620" width="296" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-5" value="Embedding, DIM = (N, word_len, 512)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="464" y="620" width="296" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-7" value="words" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="582" y="720" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-8" value="Attention is all you need" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="319" y="-50" width="246" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-9" value="+" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="412" y="630" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-12" value="Encoder Input, DIM = (N, word_len, 512)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="575" width="604" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.181;exitY=-0.04;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="O8Lu3nziAZIYqiFHIEOJ-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="450" as="sourcePoint" />
+            <mxPoint x="250" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-19" value="几个比较重要的超参&lt;br&gt;1. transformer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="-160" width="130" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
