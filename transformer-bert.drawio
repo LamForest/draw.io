@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-28T07:39:28.093Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="O7L4zCHntdPlyz3QcAAR" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-28T07:41:03.201Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="z_HETBuVpnur6xNq8r3X" version="21.6.8" type="github">
   <diagram name="第 1 页" id="M_lp6r22NxMa7Wf6T6G-">
     <mxGraphModel dx="2741" dy="3339" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -35,7 +35,7 @@
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-12" value="Encoder Input&lt;br&gt;(N, word_len, d_m)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="519" y="880" width="310" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-19" value="几个比较重要的超参&lt;br&gt;1. transformer中没有下采样；因为大量使用了skip connection，所以所有feature map（包括embedding）的维度都是相同的d_m = 512&lt;br&gt;2. 原文中用了8个head，multihead的维度为d_h = d_m / #head = 512 / 8 = 64&lt;br&gt;3. FFN的输入输出维度都是d_m，隐藏层的维度为d_ff = 2048&lt;br&gt;4. dropout rate = 0.1&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-19" value="几个比较重要的超参&lt;br&gt;1. transformer中没有下采样；因为大量使用了skip connection，所以所有feature map（包括embedding）的维度都是相同的d_m = 512&lt;br&gt;2. 原文中用了8个head，multihead的维度为d_h = d_m / #head = 512 / 8 = 64&lt;br&gt;3. FFN的输入输出维度都是d_m，隐藏层的维度为d_ff = 2048&lt;br&gt;4. dropout rate = 0.1，所有dropout都是0.1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1110" y="-1260" width="610" height="170" as="geometry" />
         </mxCell>
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="O8Lu3nziAZIYqiFHIEOJ-86" target="O8Lu3nziAZIYqiFHIEOJ-12">
@@ -68,7 +68,7 @@
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-111" value="共有6个identical的EncoderLayer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="564" y="-900" width="220" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-75" value="EncoderLayer" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-75" value="EncoderLayer" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=4;" vertex="1" parent="1">
           <mxGeometry x="-190" y="-800" width="1770" height="1630" as="geometry" />
         </mxCell>
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="O8Lu3nziAZIYqiFHIEOJ-75" target="O8Lu3nziAZIYqiFHIEOJ-150">
@@ -81,7 +81,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-76" value="Position-wise Feed-Forward Networks(FFN)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-75">
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-76" value="Position-wise Feed-Forward Networks(FFN)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-75">
           <mxGeometry x="310" y="250" width="1121" height="310" as="geometry">
             <mxRectangle x="310" y="250" width="290" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -129,7 +129,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-129" value="SubLayer 0" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-75">
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-129" value="SubLayer 0" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-75">
           <mxGeometry x="220" y="710" width="1508" height="860" as="geometry" />
         </mxCell>
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-177" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;matmul,&amp;nbsp;scaled by 1/sqrt(d_h)&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-129">
@@ -223,7 +223,7 @@
             <mxPoint x="864" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-148" value="SubLayer1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-75">
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-148" value="SubLayer1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-75">
           <mxGeometry x="210" y="100" width="1240" height="540" as="geometry">
             <mxRectangle x="210" y="100" width="100" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -788,10 +788,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-306" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-306" value="" style="group;strokeWidth=4;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="124" y="20" width="1016" height="660" as="geometry" />
         </mxCell>
-        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-2" value="Multihead Self Attention" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-306">
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-2" value="Multihead Self Attention" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-306">
           <mxGeometry width="1016" height="660" as="geometry">
             <mxRectangle x="124" y="-70" width="180" height="30" as="alternateBounds" />
           </mxGeometry>
