@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-28T16:34:24.552Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="yNViai-rrxejDTIp1lLN" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-28T16:39:40.140Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="5TFxS7eFD3ERXaYc7SIS" version="21.6.8" type="github">
   <diagram name="第 1 页" id="M_lp6r22NxMa7Wf6T6G-">
     <mxGraphModel dx="2741" dy="4508" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -617,7 +617,7 @@
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-457" value="每个SubLayer输出之前都会dropout &amp;amp; add SubLayer input" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-448">
           <mxGeometry x="884" y="40" width="350" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-458" value="每个SubLayer的输入在给Attention or FFN之前都会进行LayerNorm" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-448">
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-458" value="每个SubLayer的输入在给Attention or FFN之前都会进行LayerNorm&lt;br&gt;T5在这里有所改动，将LayerNorm放在了residual path之前" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-448">
           <mxGeometry x="970" y="800" width="400" height="30" as="geometry" />
         </mxCell>
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-459" value="2. softmax(dim = -1)&lt;br&gt;1. masked_fill (src_mask, because &lt;b&gt;&lt;u&gt;padding&lt;/u&gt;&lt;/b&gt;)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-448">
