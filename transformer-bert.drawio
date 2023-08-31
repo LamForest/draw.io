@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-28T16:39:40.140Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="5TFxS7eFD3ERXaYc7SIS" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-31T07:31:00.742Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="AluuF4cnoInH97L0Ja3A" version="21.6.8" type="github">
   <diagram name="第 1 页" id="M_lp6r22NxMa7Wf6T6G-">
-    <mxGraphModel dx="2741" dy="4508" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2141" dy="4317" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -11,13 +11,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-3" value="Positional Encoding DIM = 512&lt;br&gt;(sin cos)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-3" value="Positional Encoding&amp;nbsp;&lt;br&gt;(sin cos)&lt;br&gt;(N, word_len, d_m)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="354" y="1010" width="296" height="50" as="geometry" />
         </mxCell>
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="O8Lu3nziAZIYqiFHIEOJ-5" target="O8Lu3nziAZIYqiFHIEOJ-86">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-5" value="Embedding, DIM = (N, word_len, 512)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-5" value="Embedding&lt;br&gt;(N, word_len, d_m)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="694" y="1010" width="296" height="50" as="geometry" />
         </mxCell>
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-509" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="O8Lu3nziAZIYqiFHIEOJ-7" target="O8Lu3nziAZIYqiFHIEOJ-5">
@@ -519,7 +519,7 @@
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-378" value="... remaining 5 heads" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-363">
           <mxGeometry x="843" y="250" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-379" value="其他7个head的attentino过程....略" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-363">
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-379" value="其他7个head的attention过程....略" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-363">
           <mxGeometry x="606" y="360" width="310" height="230" as="geometry" />
         </mxCell>
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-380" value="concat" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-363">
@@ -845,7 +845,7 @@
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-65" value="... remaining 5 heads" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-2">
           <mxGeometry x="843" y="250" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-64" value="其他7个head的attentino过程....略" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-2">
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-64" value="其他7个head的attention过程....略" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-2">
           <mxGeometry x="606" y="360" width="310" height="230" as="geometry" />
         </mxCell>
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-72" value="concat" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="O8Lu3nziAZIYqiFHIEOJ-2">
