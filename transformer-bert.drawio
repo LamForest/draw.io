@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-31T07:31:00.742Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="AluuF4cnoInH97L0Ja3A" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-01T03:12:20.036Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="YnJCnYXj_UmO88lPSd4Z" version="21.6.8" type="github">
   <diagram name="第 1 页" id="M_lp6r22NxMa7Wf6T6G-">
     <mxGraphModel dx="2141" dy="4317" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -27,7 +27,7 @@
           <mxGeometry x="762" y="1110" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-8" value="Attention is all you need" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=27;" vertex="1" parent="1">
-          <mxGeometry x="1300" y="-2200" width="563" height="40" as="geometry" />
+          <mxGeometry x="1390" y="-2260" width="563" height="40" as="geometry" />
         </mxCell>
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-144" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="O8Lu3nziAZIYqiFHIEOJ-12" target="O8Lu3nziAZIYqiFHIEOJ-141">
           <mxGeometry relative="1" as="geometry" />
@@ -35,8 +35,8 @@
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-12" value="Encoder Input&lt;br&gt;(N, word_len, d_m)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="519" y="880" width="310" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-19" value="几个比较重要的超参&lt;br&gt;1. transformer中没有下采样；因为大量使用了skip connection，所以所有feature map（包括embedding）的维度都是相同的d_m = 512&lt;br&gt;2. 原文中用了8个head，multihead的维度为d_h = d_m / #head = 512 / 8 = 64&lt;br&gt;3. FFN的输入输出维度都是d_m，隐藏层的维度为d_ff = 2048&lt;br&gt;4. dropout rate = 0.1，所有dropout都是0.1&lt;br&gt;&lt;br&gt;mask共有2种&lt;br&gt;1. src_mask；输入语句长短不一，都统一padding到512长度；然而对于padding的位置进行attention是没有意义的，所以在softmax之前通过masked_fill将padding位置设为极小值，比如1e-9；softmax之后无限接近于0&lt;br&gt;2. tgt_mask，由于在第i个 timestamp，看不到i步之后的信息，所以通过tgt_mask将i步之后的值设为极小值" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="750" y="-2180" width="610" height="170" as="geometry" />
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-19" value="几个比较重要的超参&lt;br style=&quot;font-size: 17px;&quot;&gt;1. transformer中没有下采样；因为大量使用了skip connection，所以所有feature map（包括embedding）的维度都是相同的d_m = 512&lt;br style=&quot;font-size: 17px;&quot;&gt;2. 原文中用了8个head，multihead的维度为d_h = d_m / #head = 512 / 8 = 64&lt;br style=&quot;font-size: 17px;&quot;&gt;3. FFN的输入输出维度都是d_m，隐藏层的维度为d_ff = 2048&lt;br style=&quot;font-size: 17px;&quot;&gt;4. dropout rate = 0.1，所有dropout都是0.1&lt;br style=&quot;font-size: 17px;&quot;&gt;&lt;br style=&quot;font-size: 17px;&quot;&gt;mask共有2种&lt;br style=&quot;font-size: 17px;&quot;&gt;1. src_mask；输入语句长短不一，都统一padding到512长度；然而对于padding的位置进行attention是没有意义的，所以在softmax之前通过masked_fill将padding位置设为极小值，比如1e-9；softmax之后无限接近于0&lt;br style=&quot;font-size: 17px;&quot;&gt;2. tgt_mask，由于在第i个 timestamp，看不到i步之后的信息，所以通过tgt_mask将i步之后的值设为极小值" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="600" y="-2230" width="860" height="330" as="geometry" />
         </mxCell>
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="O8Lu3nziAZIYqiFHIEOJ-86" target="O8Lu3nziAZIYqiFHIEOJ-12">
           <mxGeometry relative="1" as="geometry" />
@@ -260,8 +260,8 @@
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="O8Lu3nziAZIYqiFHIEOJ-141" target="O8Lu3nziAZIYqiFHIEOJ-124">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-85" value="LayerNorm(normalized_shape = d_m, element_wise = True)&lt;br&gt;从All you need开始，LayerNorm就只针对最后一维" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="750" y="-1960" width="360" height="30" as="geometry" />
+        <mxCell id="O8Lu3nziAZIYqiFHIEOJ-85" value="LayerNorm(normalized_shape = d_m, element_wise = True)&lt;br style=&quot;font-size: 17px;&quot;&gt;从All you need开始，LayerNorm就只针对最后一维" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="610" y="-1860" width="708" height="80" as="geometry" />
         </mxCell>
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-208" value="DecoderLayer" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=4;" vertex="1" parent="1">
           <mxGeometry x="1720" y="-1950" width="1770" height="2780" as="geometry" />
