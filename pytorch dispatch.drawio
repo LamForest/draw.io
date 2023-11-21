@@ -1,23 +1,23 @@
-<mxfile host="app.diagrams.net" modified="2023-07-19T08:44:28.799Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="R7fX9_bWfNL0_oLuC7mZ" version="21.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-21T16:19:54.220Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="7Q6u2crinuapFqn9_dHR" version="22.1.3" type="github">
   <diagram name="第 1 页" id="EEyN7_L1d9EwEOdHLBwh">
-    <mxGraphModel dx="1877" dy="1689" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1648" dy="1654" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="1I8nCy4y-NXWld2Ml792-2" value="OperatorEntry" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;noLabel=0;arcSize=15;swimlaneHead=1;swimlaneFillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="350" y="170" width="440" height="150" as="geometry" />
+          <mxGeometry x="350" y="170" width="475" height="180" as="geometry" />
         </mxCell>
         <mxCell id="1I8nCy4y-NXWld2Ml792-4" value="OperatorName name_;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1I8nCy4y-NXWld2Ml792-2" vertex="1">
-          <mxGeometry y="30" width="440" height="30" as="geometry" />
+          <mxGeometry y="30" width="475" height="30" as="geometry" />
         </mxCell>
         <mxCell id="1I8nCy4y-NXWld2Ml792-3" value="std::array&amp;lt;KernelFunction, c10::num_runtime_entries{116}&amp;gt; dispatchTable_;&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1I8nCy4y-NXWld2Ml792-2" vertex="1">
-          <mxGeometry y="60" width="440" height="30" as="geometry" />
+          <mxGeometry y="60" width="475" height="30" as="geometry" />
         </mxCell>
         <mxCell id="1I8nCy4y-NXWld2Ml792-5" value="lookup(DispatchKeySet ks) -&amp;gt;&amp;nbsp;&lt;b&gt;KernelFunction&lt;/b&gt;&amp;amp; // 在dispatchTable_中根据 ks 查找应该被dispatch到的kernel&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1I8nCy4y-NXWld2Ml792-2" vertex="1">
-          <mxGeometry y="90" width="440" height="30" as="geometry" />
+          <mxGeometry y="90" width="475" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="1I8nCy4y-NXWld2Ml792-9" value="..." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1I8nCy4y-NXWld2Ml792-2" vertex="1">
-          <mxGeometry y="120" width="440" height="30" as="geometry" />
+        <mxCell id="1I8nCy4y-NXWld2Ml792-9" value="ska::flat_hash_map&amp;lt;DispatchKey, xxx&amp;gt; kernels_; //实际的kernel；每个DispatchKey允许有多个kernel，按照时间顺序，最新的在第一个；updateDispatchTable_时会在kernels[keys]中查找第一个（最新的）。" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1I8nCy4y-NXWld2Ml792-2" vertex="1">
+          <mxGeometry y="120" width="475" height="60" as="geometry" />
         </mxCell>
         <mxCell id="1I8nCy4y-NXWld2Ml792-10" value="Dispatcher" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;noLabel=0;arcSize=15;swimlaneHead=1;swimlaneFillColor=none;" parent="1" vertex="1">
           <mxGeometry x="130" y="360" width="560" height="230" as="geometry" />
@@ -43,7 +43,7 @@
         <mxCell id="1I8nCy4y-NXWld2Ml792-33" value="call(args) {&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Dispatcher::singleton().call(*this, args) //调用了Dispatcher::call&lt;br&gt;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1I8nCy4y-NXWld2Ml792-16" vertex="1">
           <mxGeometry y="60" width="580" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="Ar3AbyUFFaYx4zQCrKCH-8" value="redispatch(currentDispatchKeySet,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;args) {&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Dispatcher::singleton().redispatch(*this,currentDispatchKeySet,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;args) //调用了Dispatcher::redispatch&lt;/span&gt;&lt;br&gt;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1I8nCy4y-NXWld2Ml792-16">
+        <mxCell id="Ar3AbyUFFaYx4zQCrKCH-8" value="redispatch(currentDispatchKeySet,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;args) {&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Dispatcher::singleton().redispatch(*this,currentDispatchKeySet,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;args) //调用了Dispatcher::redispatch&lt;/span&gt;&lt;br&gt;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1I8nCy4y-NXWld2Ml792-16" vertex="1">
           <mxGeometry y="110" width="580" height="50" as="geometry" />
         </mxCell>
         <mxCell id="1I8nCy4y-NXWld2Ml792-26" value="THPVariable_conv2d(...) -&amp;gt; PyObject *" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -82,7 +82,7 @@
         <mxCell id="1I8nCy4y-NXWld2Ml792-490" value="&lt;h1&gt;dispatchTable_&lt;/h1&gt;&lt;div&gt;std::array&amp;lt;KernelFunction, c10::num_runtime_entries{116}&amp;gt; dispatchTable_;&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;这是一个长度为116的一维的静态数组，由下面的116个蓝色方框组成，每个代表一个kernel。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;116个kernel又可以划分为46个分组，每个分组属于一个Functionality。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;其中5个Functionality称为PerBackendFunctionalityKey，拥有&lt;span style=&quot;background-color: initial;&quot;&gt;15个kernels，分别对应每个backend。另外41个Functionality只有1个kernel，通常是与backend无关的Functionality。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;标注了一些重要的key，比如&lt;b&gt;Dense&lt;/b&gt;，&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="2000" y="-190" width="430" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="Ar3AbyUFFaYx4zQCrKCH-4" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="Ar3AbyUFFaYx4zQCrKCH-4" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="2490" y="-250" width="692.5" height="550" as="geometry" />
         </mxCell>
         <mxCell id="1I8nCy4y-NXWld2Ml792-493" value="&lt;h1&gt;offsets masks&lt;/h1&gt;&lt;div&gt;std::array&amp;lt;FunctionalityOffsetAndMask, num_functionality_keys{46}&amp;gt;&lt;/div&gt;&lt;div&gt;由&amp;nbsp;initializeFunctionalityOffsetsAndMasks()进行初始化&lt;/div&gt;&lt;div&gt;&lt;b&gt;offsets&lt;/b&gt;&lt;/div&gt;&lt;div&gt;如上所述，dispatchTable_实际上是二维数组，且第二维的长度可变；所以，运行时使用dispatchTable_比较不方便。offset用于解决这个问题，它代表第二维数组的起始地址。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;masks&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;当Functionality为PerBackend时，mask为0x7FFF，backend_idx = (mask &amp;amp; (DispatchKeySet &amp;gt;&amp;gt; 1)).indexOfHighestBit();&amp;nbsp;&lt;/div&gt;backend_idx&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;= 0 为CPU， = 1为CUDA，= 2为HIP。&lt;/span&gt;&lt;br&gt;&lt;div&gt;当为非PerBackend时，mask为0x0，backend_idx的计算方式一样，因为mask为0，所以&lt;/div&gt;indexOfHighestBit()永远为0。&lt;br&gt;&lt;br&gt;&lt;br&gt;运行时，functionality_idx = dispatchKeySet &amp;gt;&amp;gt; 15。kernel在dispatchTable_中的offset为&lt;b&gt;offsets[functionality_idx] + backend_idx。&lt;/b&gt;&lt;br&gt;具体的计算逻辑见getDispatchTableIndexForDispatchKeySet()" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="Ar3AbyUFFaYx4zQCrKCH-4" vertex="1">
@@ -91,13 +91,13 @@
         <mxCell id="1I8nCy4y-NXWld2Ml792-507" value="DispatchKeySet共64位" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Ar3AbyUFFaYx4zQCrKCH-4" vertex="1">
           <mxGeometry x="220" y="170" width="230" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Ar3AbyUFFaYx4zQCrKCH-3" value="" style="group" vertex="1" connectable="0" parent="Ar3AbyUFFaYx4zQCrKCH-4">
+        <mxCell id="Ar3AbyUFFaYx4zQCrKCH-3" value="" style="group" parent="Ar3AbyUFFaYx4zQCrKCH-4" vertex="1" connectable="0">
           <mxGeometry y="200" width="649" height="80" as="geometry" />
         </mxCell>
         <mxCell id="1I8nCy4y-NXWld2Ml792-495" value="0000 0000 0000 0000 0000 0000 0&lt;font color=&quot;#006633&quot;&gt;1&lt;/font&gt;00 0000 0000 0000 0000 0000 &lt;font color=&quot;#0000cc&quot;&gt;1&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Ar3AbyUFFaYx4zQCrKCH-3" vertex="1">
           <mxGeometry y="20" width="520" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Ar3AbyUFFaYx4zQCrKCH-1" value="" style="group" vertex="1" connectable="0" parent="Ar3AbyUFFaYx4zQCrKCH-3">
+        <mxCell id="Ar3AbyUFFaYx4zQCrKCH-1" value="" style="group" parent="Ar3AbyUFFaYx4zQCrKCH-3" vertex="1" connectable="0">
           <mxGeometry x="70.4399999999996" width="578.5600000000004" height="80" as="geometry" />
         </mxCell>
         <mxCell id="1I8nCy4y-NXWld2Ml792-496" value="000 0000 0000 0001" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#FF0000;" parent="Ar3AbyUFFaYx4zQCrKCH-1" vertex="1">
@@ -127,13 +127,13 @@
             <mxPoint x="578.5600000000004" y="50" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ar3AbyUFFaYx4zQCrKCH-6" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="Ar3AbyUFFaYx4zQCrKCH-6" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1730" y="120" width="950" height="1290" as="geometry" />
         </mxCell>
         <mxCell id="1I8nCy4y-NXWld2Ml792-478" value="TODO: put this in BackendComponents" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Ar3AbyUFFaYx4zQCrKCH-6" vertex="1">
           <mxGeometry y="220" width="260" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Ar3AbyUFFaYx4zQCrKCH-5" value="" style="group" vertex="1" connectable="0" parent="Ar3AbyUFFaYx4zQCrKCH-6">
+        <mxCell id="Ar3AbyUFFaYx4zQCrKCH-5" value="" style="group" parent="Ar3AbyUFFaYx4zQCrKCH-6" vertex="1" connectable="0">
           <mxGeometry x="270" width="680" height="1290" as="geometry" />
         </mxCell>
         <mxCell id="1I8nCy4y-NXWld2Ml792-234" value="0" style="rounded=0;whiteSpace=wrap;html=1;" parent="Ar3AbyUFFaYx4zQCrKCH-5" vertex="1">
