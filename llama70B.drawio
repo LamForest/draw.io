@@ -1,17 +1,35 @@
-<mxfile host="app.diagrams.net" modified="2024-04-26T09:09:10.119Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="dr8E4OiTogccGFsKc8iV" version="23.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-26T09:53:55.677Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="r90B-Z5DTYqyowZjIm1I" version="23.1.1" type="github">
   <diagram name="第 1 页" id="LpuoR3_FGBAFbbzr_1aX">
-    <mxGraphModel dx="1562" dy="817" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="954" dy="581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="yQxvXU3ZpeApNaFA7GEC-1" value="" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="130" y="80" width="690" height="490" as="geometry" />
+          <mxGeometry x="160" y="75" width="690" height="490" as="geometry" />
         </mxCell>
         <mxCell id="yQxvXU3ZpeApNaFA7GEC-3" value="LanguageModel" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="160" y="90" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="yQxvXU3ZpeApNaFA7GEC-4" value="self.embedding[VocalParrelEmbedding]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="250" y="120" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yQxvXU3ZpeApNaFA7GEC-5" value="self.encoder[ParrellTransformer]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="170" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yQxvXU3ZpeApNaFA7GEC-7" value="for layer[ParrellTransformerLayer] in self.layers:&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="220" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yQxvXU3ZpeApNaFA7GEC-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="250" width="230" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="yQxvXU3ZpeApNaFA7GEC-8" value="layernorm(根据情况可能是rmsnorm)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="229" y="300" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yQxvXU3ZpeApNaFA7GEC-9" value="self_attention[ParrellAttention]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="320" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yQxvXU3ZpeApNaFA7GEC-11" value="ParrellTransformerLayer" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="328.75" y="250" width="152.5" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
