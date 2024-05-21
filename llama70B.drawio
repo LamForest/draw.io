@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2024-05-21T17:11:29.989Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="lQW4syMzShmL0UFtOLqd" version="24.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-21T17:16:14.190Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="g0AUrBOaUjFDICFpPtMi" version="24.4.4" type="github">
   <diagram name="第 1 页" id="LpuoR3_FGBAFbbzr_1aX">
-    <mxGraphModel dx="1781" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1781" dy="1751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="yQxvXU3ZpeApNaFA7GEC-1" value="" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="160" y="75" width="690" height="490" as="geometry" />
+          <mxGeometry x="160" y="-30" width="690" height="490" as="geometry" />
         </mxCell>
         <mxCell id="yQxvXU3ZpeApNaFA7GEC-3" value="TransformerLanguageModel" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="380" y="75" width="210" height="20" as="geometry" />
@@ -32,7 +32,7 @@
           <mxGeometry x="220" y="200" width="250" height="30" as="geometry" />
         </mxCell>
         <mxCell id="yQxvXU3ZpeApNaFA7GEC-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="680" y="250" width="510" height="260" as="geometry" />
+          <mxGeometry x="680" y="206.69" width="510" height="260" as="geometry" />
         </mxCell>
         <mxCell id="yQxvXU3ZpeApNaFA7GEC-15" value="ParrellAttention" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="718.75" y="250" width="152.5" height="30" as="geometry" />
@@ -166,6 +166,9 @@
         </mxCell>
         <mxCell id="D8HjAB1xBHPoYr6kZlRV-7" value="llama2 70B的一些超参：&lt;div&gt;词表大小 V: 32256 padded vocab (size: 32000) with 256 dummy tokens (new size: 32256)&lt;/div&gt;&lt;div&gt;E: embedding dim / hidden size 8192&lt;/div&gt;&lt;div&gt;S: sequence length 4096&lt;/div&gt;&lt;div&gt;H = 64&lt;/div&gt;&lt;div&gt;G: group = 8&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-490" y="680" width="580" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="D8HjAB1xBHPoYr6kZlRV-10" value="MBS x S x E" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="530" width="360" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
