@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-21T10:08:49.226Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="UoqcdOw0w256nfr-Vkri" version="24.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-21T16:47:58.621Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="hlWXkZwQg_6ku0oICcvx" version="24.4.4" type="github">
   <diagram name="第 1 页" id="LpuoR3_FGBAFbbzr_1aX">
-    <mxGraphModel dx="692" dy="406" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1565" dy="854" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -107,7 +107,7 @@
           <mxGeometry x="1670" y="1090" width="280" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rBHtqcxhBLJhog4YkDWu-15" value="async_grad_allreduce=False, SP=False" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1480" y="1050" width="220" height="30" as="geometry" />
+          <mxGeometry x="1320" y="1010" width="220" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rBHtqcxhBLJhog4YkDWu-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rBHtqcxhBLJhog4YkDWu-16" target="rBHtqcxhBLJhog4YkDWu-19">
           <mxGeometry relative="1" as="geometry" />
@@ -139,6 +139,15 @@
         </mxCell>
         <mxCell id="rBHtqcxhBLJhog4YkDWu-26" value="grad_input, grad_weight" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1730" y="1450" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rBHtqcxhBLJhog4YkDWu-28" value="LinearWithGradAccumulationAndAsyncCommunication反向" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1540" y="840" width="583" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rBHtqcxhBLJhog4YkDWu-29" value="LinearWithGradAccumulationAndAsyncCommunication前向" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1518.5" y="1580" width="583" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rBHtqcxhBLJhog4YkDWu-30" value="sequence_parallel" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2160" y="960" width="220" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
