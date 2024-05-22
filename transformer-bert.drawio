@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-22T08:09:06.231Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="IEsCB3FF5BGU56Wx8yJ0" version="24.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-22T09:20:57.920Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="cErSk1L657vq_BKgpVyZ" version="24.4.4" type="github">
   <diagram name="第 1 页" id="M_lp6r22NxMa7Wf6T6G-">
     <mxGraphModel dx="2389" dy="4370" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1001,10 +1001,10 @@
         <mxCell id="AtByPO6VYu3EjvDnrjTL-4" value="Q" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="3900" y="-1490" width="60" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="AtByPO6VYu3EjvDnrjTL-5" value="S x d_m" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="4440" y="-1350" width="60" height="30" as="geometry" />
+        <mxCell id="AtByPO6VYu3EjvDnrjTL-5" value="(S, MBS, d_m); 70B (4096, 2, 8192)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="4350" y="-1305" width="280" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="AtByPO6VYu3EjvDnrjTL-7" value="S x (d_h x #HEAD x 3) = S x (d_m x 3)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="AtByPO6VYu3EjvDnrjTL-7" value="S * (d_h * H * 3) = S * (d_m * 3)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="4620" y="-1485" width="250" height="30" as="geometry" />
         </mxCell>
         <mxCell id="AtByPO6VYu3EjvDnrjTL-8" value="ColumnParallelLinear, (d_m, d_m x 3), 70B (8192, 24576)&lt;div&gt;一般而言，d_head&amp;nbsp; x #head = d_m&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ColumnParallel切为TP份，每个TP参数维度是(d_m, d_m * 3 / TP); 70B tp=4 为(8192,&amp;nbsp;6144)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -1105,6 +1105,9 @@
         </mxCell>
         <mxCell id="AtByPO6VYu3EjvDnrjTL-64" value="fwd: identity&lt;div&gt;bwd: all_reduce&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="4145" y="-1383" width="140" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="AtByPO6VYu3EjvDnrjTL-65" value="(S , MBS, d_m * 3 / TP); 70B (4096, 2, 6144)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="3820" y="-1560" width="250" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
