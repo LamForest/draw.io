@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-07T15:59:17.978Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="E7Jm1udgaGHUE2WiMDYY" version="24.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-07T16:17:22.647Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="iHSllHTwY5E__3pz-XMm" version="24.5.1" type="github">
   <diagram name="第 1 页" id="M_lp6r22NxMa7Wf6T6G-">
     <mxGraphModel dx="2901" dy="4581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1395,7 +1395,7 @@
           <mxGeometry x="5516" y="-1760" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="jsNCq3aiPTTEtaQhPkx2-135" value="&lt;div&gt;&lt;div&gt;ParallelAttention in transformer.py&lt;br&gt;&lt;/div&gt;&lt;/div&gt;Multihead Group Self-Attention&lt;div&gt;&lt;div&gt;(tp=TP)&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=23;" vertex="1" parent="1">
-          <mxGeometry x="6735" y="-2110" width="517.5" height="20" as="geometry" />
+          <mxGeometry x="6987.5" y="-1910" width="517.5" height="20" as="geometry" />
         </mxCell>
         <mxCell id="jsNCq3aiPTTEtaQhPkx2-139" value="Q" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="6461" y="-1120" width="60" height="40" as="geometry" />
@@ -1558,7 +1558,12 @@
         <mxCell id="jsNCq3aiPTTEtaQhPkx2-187" value="context_layer [S, B, d_m / TP]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="6614" y="-1730" width="352" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="jsNCq3aiPTTEtaQhPkx2-188" value="hidden_states [S, B, d_m]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-242" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jsNCq3aiPTTEtaQhPkx2-188" target="jsNCq3aiPTTEtaQhPkx2-243">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="6792" y="-2180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-188" value="hidden_states [S/TP, B, d_m]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="6616" y="-1940" width="352" height="40" as="geometry" />
         </mxCell>
         <mxCell id="jsNCq3aiPTTEtaQhPkx2-189" value="self.dense(context_layer)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -1578,14 +1583,14 @@
         <mxCell id="jsNCq3aiPTTEtaQhPkx2-209" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jsNCq3aiPTTEtaQhPkx2-203" target="jsNCq3aiPTTEtaQhPkx2-208">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jsNCq3aiPTTEtaQhPkx2-203" value="RowPL" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontSize=17;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-203" value="RowPL&lt;div&gt;reduce_scatter&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontSize=17;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="7156" y="-1825" width="150" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="jsNCq3aiPTTEtaQhPkx2-208" value="hidden_states [S, B, d_m]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-208" value="hidden_states [S/TP, B, d_m]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="7660" y="-1930" width="352" height="40" as="geometry" />
         </mxCell>
         <mxCell id="jsNCq3aiPTTEtaQhPkx2-210" value="Attention模块的tp切分很好理解，tp=1情况下group_num全部换成group_num_per_tp即可&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="6675" y="-2040" width="60" height="30" as="geometry" />
+          <mxGeometry x="6460" y="-1960" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="jsNCq3aiPTTEtaQhPkx2-213" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jsNCq3aiPTTEtaQhPkx2-211" target="jsNCq3aiPTTEtaQhPkx2-212">
           <mxGeometry relative="1" as="geometry" />
@@ -1621,16 +1626,58 @@
           <mxGeometry x="5496" y="-160" width="230" height="30" as="geometry" />
         </mxCell>
         <mxCell id="jsNCq3aiPTTEtaQhPkx2-228" value="self.input_layernorm(hidden_states)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="7252.5" y="-190" width="230" height="30" as="geometry" />
+          <mxGeometry x="7275" y="-170" width="230" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="jsNCq3aiPTTEtaQhPkx2-231" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jsNCq3aiPTTEtaQhPkx2-229" target="jsNCq3aiPTTEtaQhPkx2-211">
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-238" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jsNCq3aiPTTEtaQhPkx2-229" target="jsNCq3aiPTTEtaQhPkx2-235">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jsNCq3aiPTTEtaQhPkx2-229" value="hidden_states 即 X [S, B, d_m]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-229" value="hidden_states 即 X [S/TP, B, d_m]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="6701" y="-90" width="240" height="40" as="geometry" />
         </mxCell>
         <mxCell id="jsNCq3aiPTTEtaQhPkx2-233" value="这部分逻辑在ParallelTransformerLayer 中" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="5223" y="-230" width="187" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-239" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jsNCq3aiPTTEtaQhPkx2-235" target="jsNCq3aiPTTEtaQhPkx2-211">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="7376" y="-410" />
+              <mxPoint x="6821" y="-410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-235" value="fwd: all_gather&lt;div&gt;bwd: ?&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="7323" y="-270" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-241" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jsNCq3aiPTTEtaQhPkx2-240" target="jsNCq3aiPTTEtaQhPkx2-235">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-245" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jsNCq3aiPTTEtaQhPkx2-240">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="6790" y="-1990" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="8160" y="-70" />
+              <mxPoint x="8160" y="-1990" />
+              <mxPoint x="6967" y="-1990" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-240" value="hidden_states 即 X [S/TP, B, d_m]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="7750" y="-90" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-243" value="hidden_states [S/TP, B, d_m]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="6615" y="-2220" width="352" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-244" value="self.post_attention_layernorm(layernorm_input)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="6847" y="-2100" width="309" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-246" value="这里的residual可以是input_layernorm之前的hiddenstates，也可以是input_layernorm之后的hiddenstate" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="7660" y="-310" width="340" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-248" value="dropout" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="6701" y="-1980" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-249" value="+" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=19;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="6771" y="-2020" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
