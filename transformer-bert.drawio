@@ -1,9 +1,30 @@
-<mxfile host="app.diagrams.net" modified="2024-06-17T11:57:48.139Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="fvlXb4mhVu0CjR3sSOSF" version="24.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-18T09:01:03.625Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="4j1QAe567D8basJlAxXA" version="24.5.1" type="github">
   <diagram name="第 1 页" id="M_lp6r22NxMa7Wf6T6G-">
-    <mxGraphModel dx="2741" dy="5672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2901" dy="5750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="ShNtASXp037bqKGVbYAY-165" value="ParallelTransformerLayer" style="swimlane;whiteSpace=wrap;html=1;swimlaneFillColor=#FFF2CC;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="8460" y="-3760" width="1380" height="4800" as="geometry" />
+        </mxCell>
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-305" value="hidden_states [S/TP, B, d_m]" style="rounded=0;whiteSpace=wrap;html=1;" parent="ShNtASXp037bqKGVbYAY-165" vertex="1">
+          <mxGeometry x="363" y="1640" width="352" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-331" value="dropout" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="ShNtASXp037bqKGVbYAY-165" vertex="1">
+          <mxGeometry x="471" y="1610" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ShNtASXp037bqKGVbYAY-166" value="ParallelAttention" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;swimlaneFillColor=#FFCCCC;" vertex="1" parent="ShNtASXp037bqKGVbYAY-165">
+          <mxGeometry x="140" y="1690" width="1150" height="1780" as="geometry" />
+        </mxCell>
+        <mxCell id="jsNCq3aiPTTEtaQhPkx2-306" value="self.dense(context_layer)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontStyle=1" parent="ShNtASXp037bqKGVbYAY-165" vertex="1">
+          <mxGeometry x="880" y="1840" width="167" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ShNtASXp037bqKGVbYAY-167" value="ParallelMLP" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;swimlaneFillColor=#E6D0DE;" vertex="1" parent="ShNtASXp037bqKGVbYAY-165">
+          <mxGeometry x="110" y="480" width="1000" height="810" as="geometry" />
+        </mxCell>
+        <mxCell id="ShNtASXp037bqKGVbYAY-104" value="hidden_states [S/TP, B, d_m]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ShNtASXp037bqKGVbYAY-165">
+          <mxGeometry x="366" y="410" width="352" height="40" as="geometry" />
+        </mxCell>
         <mxCell id="O8Lu3nziAZIYqiFHIEOJ-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="O8Lu3nziAZIYqiFHIEOJ-3" target="O8Lu3nziAZIYqiFHIEOJ-86" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -1690,9 +1711,6 @@
         <mxCell id="jsNCq3aiPTTEtaQhPkx2-253" value="value_layer [S, B, group_num x group_size, d_h]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="5840" y="-1295" width="334" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="jsNCq3aiPTTEtaQhPkx2-254" value="&lt;div&gt;&lt;div&gt;ParallelAttention in transformer.py&lt;br&gt;&lt;/div&gt;&lt;/div&gt;Multihead Group Self-Attention&lt;div&gt;&lt;div&gt;(tp=TP), seq_parallel=True&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=23;" parent="1" vertex="1">
-          <mxGeometry x="9286.25" y="-2040" width="517.5" height="20" as="geometry" />
-        </mxCell>
         <mxCell id="jsNCq3aiPTTEtaQhPkx2-255" value="Q" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="8671" y="-1120" width="60" height="40" as="geometry" />
         </mxCell>
@@ -1852,12 +1870,6 @@
         <mxCell id="ShNtASXp037bqKGVbYAY-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jsNCq3aiPTTEtaQhPkx2-305" target="jsNCq3aiPTTEtaQhPkx2-332">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jsNCq3aiPTTEtaQhPkx2-305" value="hidden_states [S/TP, B, d_m]" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="8824" y="-2100" width="352" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="jsNCq3aiPTTEtaQhPkx2-306" value="self.dense(context_layer)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="8550" y="-1877" width="167" height="20" as="geometry" />
-        </mxCell>
         <mxCell id="jsNCq3aiPTTEtaQhPkx2-308" value="context_layer [S, B, d_m / TP]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="9870" y="-1730" width="352" height="40" as="geometry" />
         </mxCell>
@@ -1865,7 +1877,7 @@
           <mxGeometry x="9886" y="-2090" width="352" height="40" as="geometry" />
         </mxCell>
         <mxCell id="jsNCq3aiPTTEtaQhPkx2-313" value="Attention模块的tp切分很好理解，tp=1情况下group_num全部换成group_num_per_tp即可&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="8570" y="-2010" width="60" height="30" as="geometry" />
+          <mxGeometry x="8200" y="-2020" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ShNtASXp037bqKGVbYAY-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jsNCq3aiPTTEtaQhPkx2-315" target="ShNtASXp037bqKGVbYAY-53">
           <mxGeometry relative="1" as="geometry" />
@@ -1884,8 +1896,8 @@
         <mxCell id="ShNtASXp037bqKGVbYAY-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jsNCq3aiPTTEtaQhPkx2-322" target="jsNCq3aiPTTEtaQhPkx2-332">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="8540" y="-30" />
-              <mxPoint x="8540" y="-2165" />
+              <mxPoint x="8500" y="-30" />
+              <mxPoint x="8500" y="-2165" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -1902,9 +1914,6 @@
         </mxCell>
         <mxCell id="jsNCq3aiPTTEtaQhPkx2-329" value="self.post_attention_layernorm(layernorm_input)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="8979" y="-2240" width="309" height="10" as="geometry" />
-        </mxCell>
-        <mxCell id="jsNCq3aiPTTEtaQhPkx2-331" value="dropout" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="8931" y="-2140" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ShNtASXp037bqKGVbYAY-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="jsNCq3aiPTTEtaQhPkx2-332" target="ShNtASXp037bqKGVbYAY-118">
           <mxGeometry relative="1" as="geometry">
@@ -1934,8 +1943,8 @@
         <mxCell id="jsNCq3aiPTTEtaQhPkx2-334" value="value_layer [S, B, group_num_per_tp x group_size, d_h]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="9378" y="-1315" width="334" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-7" value="&lt;div style=&quot;text-align: center;&quot;&gt;LinearWithGradAccumulationAndAsyncCommunication&lt;/div&gt;&lt;div&gt;参数解释：&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;与SP相关的参数：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;sequence_parallel_enabled/&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;sequence_parallel&lt;span style=&quot;font-weight: normal;&quot;&gt;:&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: normal; background-color: initial;&quot;&gt;SP开启时，&lt;/span&gt;&lt;span style=&quot;font-weight: normal; background-color: initial;&quot;&gt;在前向过程中，&lt;/span&gt;&lt;font style=&quot;font-weight: normal; background-color: initial;&quot; color=&quot;#ff0000&quot;&gt;是否在fc前进行allgather，&lt;/font&gt;&lt;span style=&quot;font-weight: normal; background-color: initial;&quot;&gt;ColPL需要，&lt;/span&gt;&lt;span style=&quot;font-weight: normal; background-color: initial;&quot;&gt;RowPL不需要&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;enable_sequence_parallel_caching&lt;span style=&quot;font-weight: normal;&quot;&gt;（args参数，默认为False）：SP开启时，ColPL反向每个worker都没有完整的输入，而反向计算需要完整的输入，如何得到？当该参数为True时前向&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: normal; background-color: initial;&quot;&gt;ctx.save_for_backward(input, weight, None)；为False时，反向需要再做一次allgather。空间、时间上的一个balence（注：百舸争流该参数有点诡异。。）&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=389;align=left;" vertex="1" parent="1">
-          <mxGeometry x="10990" y="-2190" width="1230" height="1160" as="geometry" />
+        <mxCell id="ShNtASXp037bqKGVbYAY-7" value="&lt;div style=&quot;text-align: center;&quot;&gt;LinearWithGradAccumulationAndAsyncCommunication&lt;/div&gt;&lt;div&gt;参数解释：&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;与SP相关的参数：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;sequence_parallel_enabled/&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;sequence_parallel&lt;span style=&quot;font-weight: normal;&quot;&gt;:&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: normal; background-color: initial;&quot;&gt;SP开启时，&lt;/span&gt;&lt;span style=&quot;font-weight: normal; background-color: initial;&quot;&gt;在前向过程中，&lt;/span&gt;&lt;font style=&quot;font-weight: normal; background-color: initial;&quot; color=&quot;#ff0000&quot;&gt;是否在fc前进行allgather，&lt;/font&gt;&lt;span style=&quot;font-weight: normal; background-color: initial;&quot;&gt;ColPL需要，&lt;/span&gt;&lt;span style=&quot;font-weight: normal; background-color: initial;&quot;&gt;RowPL不需要&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;enable_sequence_parallel_caching&lt;span style=&quot;font-weight: normal;&quot;&gt;（args参数，默认为False）：SP开启时，ColPL反向每个worker都没有完整的输入，而反向计算需要完整的输入，如何得到？当该参数为True时前向&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: normal; background-color: initial;&quot;&gt;ctx.save_for_backward(input, weight, None)；为False时，反向需要再做一次allgather。空间、时间上的一个balence（注：百舸争流该参数有点诡异。。）&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal; background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal; background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;async_all_reduce: SP关闭时起作用，ColPL需要将dx做all_reduce，RowPL则不需要；和&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;sequence_parallel_enabled&lt;span style=&quot;font-weight: normal;&quot;&gt;类似；不同的是fwd没有allgather，因为每个tp是一个完整的输入&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=389;align=left;" vertex="1" parent="1">
+          <mxGeometry x="10990" y="-2190" width="1300" height="1170" as="geometry" />
         </mxCell>
         <mxCell id="ShNtASXp037bqKGVbYAY-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="ShNtASXp037bqKGVbYAY-7" source="ShNtASXp037bqKGVbYAY-9" target="ShNtASXp037bqKGVbYAY-13">
           <mxGeometry relative="1" as="geometry">
@@ -2082,17 +2091,6 @@
         <mxCell id="ShNtASXp037bqKGVbYAY-78" value="apply_residual_connection_post_layernorm=False&lt;div&gt;所以使用layernorm之前的hidden_state作为residual&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="8626" y="-95" width="300" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-79" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=3;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="8530" y="-2110" as="sourcePoint" />
-            <mxPoint x="9763.75" y="-2110" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-81" value="ParallelAttention" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ShNtASXp037bqKGVbYAY-79">
-          <mxGeometry x="-0.0549" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="ShNtASXp037bqKGVbYAY-82" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=3;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="8520" y="-190" as="sourcePoint" />
@@ -2124,26 +2122,6 @@
             <mxPoint x="9960" y="-2540" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-89" value="ColPL,&amp;nbsp;sequence_parallel_enabled=True,&amp;nbsp;input_is_parallel=True" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="8705.5" y="-2770" width="609" height="271" as="geometry" />
-        </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-90" value="&lt;div&gt;linear_with_grad_accumulation_and_async_allreduce(sequence_parallel_enabled=True)&lt;/div&gt;&lt;div&gt;Note: 在&lt;span style=&quot;background-color: initial;&quot;&gt;linear_with_grad_accumulation_and_async_allreduce中，&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;sequence_parallel_enabled的含义为在前向过程中，&lt;font color=&quot;#ff0000&quot;&gt;是否在fc前进行allgather&lt;/font&gt;，ColPL需要，所以为True&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=49;" vertex="1" parent="ShNtASXp037bqKGVbYAY-89">
-          <mxGeometry x="11.5" y="40" width="586" height="210" as="geometry" />
-        </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ShNtASXp037bqKGVbYAY-90" source="ShNtASXp037bqKGVbYAY-91">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="283.25" y="-90" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-91" value="[S, B, d_m]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ShNtASXp037bqKGVbYAY-90">
-          <mxGeometry x="186" y="134" width="194.5" height="36.5" as="geometry" />
-        </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-92" value="_all_gather_base" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ShNtASXp037bqKGVbYAY-90">
-          <mxGeometry x="308.5" y="170.5" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-93" value="custom_fc" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ShNtASXp037bqKGVbYAY-90">
-          <mxGeometry x="288.5" y="84" width="60" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="ShNtASXp037bqKGVbYAY-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ShNtASXp037bqKGVbYAY-96" target="ShNtASXp037bqKGVbYAY-100">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -2156,13 +2134,8 @@
         <mxCell id="ShNtASXp037bqKGVbYAY-98" value="_reduce_scatter_along_first_dim" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="ShNtASXp037bqKGVbYAY-97">
           <mxGeometry x="295" y="50" width="200" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-99" value="&lt;div&gt;linear_with_grad_accumulation_and_async_allreduce(sequence_parallel_enabled=False)&lt;/div&gt;&lt;div&gt;Note: 在&lt;span style=&quot;background-color: initial;&quot;&gt;linear_with_grad_accumulation_and_async_allreduce中，&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;sequence_parallel_enabled的含义为在前向过程中，&lt;font color=&quot;#ff0000&quot;&gt;是否在fc前进行allgather&lt;/font&gt;，RowPL不需要，所以为False&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=49;" vertex="1" parent="ShNtASXp037bqKGVbYAY-97">
+        <mxCell id="ShNtASXp037bqKGVbYAY-99" value="&lt;div&gt;linear_with_grad_accumulation_and_async_allreduce(sequence_parallel_enabled=False)&lt;/div&gt;&lt;div&gt;Note: 在&lt;span style=&quot;background-color: initial;&quot;&gt;linear_with_grad_accumulation_and_async_allreduce中，&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;sequence_parallel_enabled的含义为在前向过程中，&lt;font color=&quot;#ff0000&quot;&gt;是否在fc前进行allgather&lt;/font&gt;，RowPL不需要，所以为False。&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=74;" vertex="1" parent="ShNtASXp037bqKGVbYAY-97">
           <mxGeometry x="11.5" y="96" width="586" height="154" as="geometry" />
-        </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ShNtASXp037bqKGVbYAY-99" source="ShNtASXp037bqKGVbYAY-100">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="283" y="-146" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="ShNtASXp037bqKGVbYAY-100" value="[S, B, d_m]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ShNtASXp037bqKGVbYAY-99">
           <mxGeometry x="185.75" y="84" width="194.5" height="36.5" as="geometry" />
@@ -2175,9 +2148,6 @@
             <mxPoint x="9002" y="-3420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-104" value="hidden_states [S/TP, B, d_m]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="8826" y="-3310" width="352" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="ShNtASXp037bqKGVbYAY-106" value="self.dense_h_to_4h" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="8578" y="-2680" width="139" height="26" as="geometry" />
         </mxCell>
@@ -2186,17 +2156,6 @@
         </mxCell>
         <mxCell id="ShNtASXp037bqKGVbYAY-111" value="self.dense_4h_to_h" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="8578" y="-3100" width="120" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-112" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=3;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="8570" y="-3340" as="sourcePoint" />
-            <mxPoint x="9803.75" y="-3340" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-113" value="ParallelMLP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ShNtASXp037bqKGVbYAY-112">
-          <mxGeometry x="-0.0549" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="ShNtASXp037bqKGVbYAY-123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ShNtASXp037bqKGVbYAY-118" target="ShNtASXp037bqKGVbYAY-124">
           <mxGeometry relative="1" as="geometry">
@@ -2216,28 +2175,6 @@
         </mxCell>
         <mxCell id="ShNtASXp037bqKGVbYAY-124" value="hidden_states [S/TP, B, d_m]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="8826" y="-3620" width="352" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-125" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=3;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="8560" y="-3740" as="sourcePoint" />
-            <mxPoint x="9793.75" y="-3740" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-126" value="ParallelTransformerLayer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ShNtASXp037bqKGVbYAY-125">
-          <mxGeometry x="-0.0549" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-128" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=3;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="8520" y="80" as="sourcePoint" />
-            <mxPoint x="9753.75" y="80" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-129" value="Embedding" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ShNtASXp037bqKGVbYAY-128">
-          <mxGeometry x="-0.0549" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="ShNtASXp037bqKGVbYAY-133" value="_split_along_first_dim" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="9010" y="110" width="150" height="40" as="geometry" />
@@ -2264,17 +2201,6 @@
         </mxCell>
         <mxCell id="ShNtASXp037bqKGVbYAY-140" value="input [B, S]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="8880" y="900" width="240" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-141" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=3;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="8516.630000000001" y="400" as="sourcePoint" />
-            <mxPoint x="9750.38" y="400" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ShNtASXp037bqKGVbYAY-142" value="VocabParallelEmbedding" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ShNtASXp037bqKGVbYAY-141">
-          <mxGeometry x="-0.0549" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
         </mxCell>
         <UserObject label="&lt;div style=&quot;color: #657b83;background-color: #fdf6e3;font-family: Menlo, Monaco, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;            &lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;input_mask&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #859900;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; (input_ &lt;/span&gt;&lt;span style=&quot;color: #859900;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;self&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;vocab_start_index&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;) &lt;/span&gt;&lt;span style=&quot;color: #859900;&quot;&gt;|&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #dc322f;&quot;&gt;\&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;                         (input_ &lt;/span&gt;&lt;span style=&quot;color: #859900;&quot;&gt;&amp;gt;=&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;self&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;vocab_end_index&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;            &lt;/span&gt;&lt;span style=&quot;color: #93a1a1;font-style: italic;&quot;&gt;# Mask the input.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;            &lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;masked_input&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #859900;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; input_.clone() &lt;/span&gt;&lt;span style=&quot;color: #859900;&quot;&gt;-&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;self&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;vocab_start_index&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;            &lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;masked_input&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;input_mask&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;] &lt;/span&gt;&lt;span style=&quot;color: #859900;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d33682;&quot;&gt;0 #避免查表越界&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" link="&lt;div style=&quot;color: #657b83;background-color: #fdf6e3;font-family: Menlo, Monaco, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;            &lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;input_mask&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #859900;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; (input_ &lt;/span&gt;&lt;span style=&quot;color: #859900;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;self&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;vocab_start_index&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;) &lt;/span&gt;&lt;span style=&quot;color: #859900;&quot;&gt;|&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #dc322f;&quot;&gt;\&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;                         (input_ &lt;/span&gt;&lt;span style=&quot;color: #859900;&quot;&gt;&amp;gt;=&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;self&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;vocab_end_index&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;            &lt;/span&gt;&lt;span style=&quot;color: #93a1a1;font-style: italic;&quot;&gt;# Mask the input.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;            &lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;masked_input&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #859900;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; input_.clone() &lt;/span&gt;&lt;span style=&quot;color: #859900;&quot;&gt;-&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;self&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;vocab_start_index&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;            &lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;masked_input&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #268bd2;&quot;&gt;input_mask&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt;] &lt;/span&gt;&lt;span style=&quot;color: #859900;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #657b83;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d33682;&quot;&gt;0&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" id="ShNtASXp037bqKGVbYAY-146">
           <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -2318,10 +2244,41 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ShNtASXp037bqKGVbYAY-161" value="self.final_layernorm(hidden_states)" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="9011" y="-3800" width="220" height="40" as="geometry" />
+          <mxGeometry x="9011" y="-3810" width="220" height="40" as="geometry" />
         </mxCell>
         <mxCell id="ShNtASXp037bqKGVbYAY-162" value="hidden_states [S/TP, B, d_m]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="8826" y="-3880" width="352" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ShNtASXp037bqKGVbYAY-163" value="VocabParallelEmbedding" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="8590" y="400" width="1170" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="ShNtASXp037bqKGVbYAY-164" value="Embedding" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="8533.5" y="72" width="1276.5" height="938" as="geometry" />
+        </mxCell>
+        <mxCell id="ShNtASXp037bqKGVbYAY-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ShNtASXp037bqKGVbYAY-100" target="ShNtASXp037bqKGVbYAY-104">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="9002" y="-3270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ShNtASXp037bqKGVbYAY-89" value="ColPL,&amp;nbsp;sequence_parallel_enabled=True,&amp;nbsp;input_is_parallel=True" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="8705.5" y="-2770" width="609" height="271" as="geometry" />
+        </mxCell>
+        <mxCell id="ShNtASXp037bqKGVbYAY-90" value="&lt;div&gt;linear_with_grad_accumulation_and_async_allreduce(sequence_parallel_enabled=True)&lt;/div&gt;&lt;div&gt;Note: 在&lt;span style=&quot;background-color: initial;&quot;&gt;linear_with_grad_accumulation_and_async_allreduce中，&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;sequence_parallel_enabled的含义为在前向过程中，&lt;font color=&quot;#ff0000&quot;&gt;是否在fc前进行allgather&lt;/font&gt;，ColPL需要，所以为True&lt;/span&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=49;" vertex="1" parent="ShNtASXp037bqKGVbYAY-89">
+          <mxGeometry x="11.5" y="40" width="586" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ShNtASXp037bqKGVbYAY-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="ShNtASXp037bqKGVbYAY-90" source="ShNtASXp037bqKGVbYAY-91">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="283.25" y="-90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ShNtASXp037bqKGVbYAY-91" value="[S, B, d_m]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ShNtASXp037bqKGVbYAY-90">
+          <mxGeometry x="186" y="134" width="194.5" height="36.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ShNtASXp037bqKGVbYAY-92" value="_all_gather_base" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ShNtASXp037bqKGVbYAY-90">
+          <mxGeometry x="308.5" y="170.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ShNtASXp037bqKGVbYAY-93" value="custom_fc" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ShNtASXp037bqKGVbYAY-90">
+          <mxGeometry x="288.5" y="84" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
