@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-19T07:03:00.345Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="qR6Z64wIlx6YZi5phM_m" version="24.5.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-19T08:16:58.731Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="d02O2ujjMuC6dVywx0NV" version="24.5.5" type="github">
   <diagram name="第 1 页" id="2IgsH-ITkYl6q4gYNYRC">
-    <mxGraphModel dx="-5049" dy="5906" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="-5369" dy="5750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -476,7 +476,7 @@
         <mxCell id="2vjOk2sk5CpCFmqSpdgf-137" value="custom_fc" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="2vjOk2sk5CpCFmqSpdgf-133">
           <mxGeometry x="288.5" y="84" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="2vjOk2sk5CpCFmqSpdgf-138" value="LanguageModel" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="2vjOk2sk5CpCFmqSpdgf-138" value="TransformerLanguageModel(add_encoder=True, add_decoder-False, add_pooler=False, pre_process=True, post_process=True, norm_type=rmsnorm, decoder_attn_mask_type=AttnMaskType.causal)" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="8310" y="-4170" width="1580" height="5520" as="geometry" />
         </mxCell>
       </root>
