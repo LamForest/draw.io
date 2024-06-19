@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-19T07:00:08.309Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="Z6TV1Ky5al6bcVkHmHmd" version="24.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-19T07:00:22.562Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="p3DByA5tgZX80Gf1tOkA" version="24.5.1" type="github">
   <diagram name="第 1 页" id="M_lp6r22NxMa7Wf6T6G-">
-    <mxGraphModel dx="2901" dy="5750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3221" dy="5906" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2270,6 +2270,9 @@
         </mxCell>
         <mxCell id="ShNtASXp037bqKGVbYAY-93" value="custom_fc" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ShNtASXp037bqKGVbYAY-90">
           <mxGeometry x="288.5" y="84" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ShNtASXp037bqKGVbYAY-168" value="Vertical Container" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="8310" y="-4170" width="200" height="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
