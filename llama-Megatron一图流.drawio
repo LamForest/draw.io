@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-20T06:15:24.045Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="yVr6--sky-85aVPVsj82" version="24.5.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-20T06:16:08.898Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="xeSk9l_lYwH63vshMKeO" version="24.5.5" type="github">
   <diagram name="第 1 页" id="2IgsH-ITkYl6q4gYNYRC">
     <mxGraphModel dx="-4627" dy="6123" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -293,17 +293,6 @@
         </mxCell>
         <mxCell id="2vjOk2sk5CpCFmqSpdgf-88" value="apply_residual_connection_post_layernorm=False&lt;div&gt;所以使用layernorm之前的hidden_state作为residual&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="8626" y="-95" width="300" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="2vjOk2sk5CpCFmqSpdgf-89" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=3;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="8520" y="-190" as="sourcePoint" />
-            <mxPoint x="9753.75" y="-190" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="2vjOk2sk5CpCFmqSpdgf-90" value="ParallelTransformerLayer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2vjOk2sk5CpCFmqSpdgf-89">
-          <mxGeometry x="-0.0549" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="2vjOk2sk5CpCFmqSpdgf-91" value="self.query_key_value(hidden_states)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="9310" y="-470" width="220" height="20" as="geometry" />
