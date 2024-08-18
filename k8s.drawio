@@ -17,7 +17,7 @@
           <mxGeometry x="30" y="110" width="310" height="20" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-10" value="K8S" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="-60" width="780" height="530" as="geometry" />
+          <mxGeometry x="340" y="-60" width="1140" height="530" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-48" value="" style="group" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-10">
           <mxGeometry x="460" y="30" width="150" height="110" as="geometry" />
@@ -34,7 +34,7 @@
         <mxCell id="48Nk2eateA9YyvYsNSkh-12" value="API服务器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
           <mxGeometry x="30" y="160" width="120" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-13" value="&lt;b&gt;Job&lt;/b&gt;&lt;div&gt;Created&lt;/div&gt;&lt;div&gt;Running&lt;/div&gt;&lt;div&gt;Failed&lt;/div&gt;&lt;div&gt;Succeeded&lt;/div&gt;" style="shape=card;whiteSpace=wrap;html=1;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-13" value="&lt;b&gt;Job&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=card;whiteSpace=wrap;html=1;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
           <mxGeometry x="220" y="137.5" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-23" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
@@ -113,6 +113,26 @@
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-63" value="&lt;b&gt;Pod&lt;/b&gt;&lt;div&gt;&lt;b&gt;worker-127&lt;/b&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-60">
           <mxGeometry x="45.67" y="40" width="67" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="48Nk2eateA9YyvYsNSkh-65" value="&lt;b&gt;对象存储&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;数据集&lt;/div&gt;&lt;div&gt;ckpt&lt;/div&gt;&lt;div&gt;日志&lt;/div&gt;&lt;div&gt;....&lt;/div&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
+          <mxGeometry x="800" y="250" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="48Nk2eateA9YyvYsNSkh-66" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="48Nk2eateA9YyvYsNSkh-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="330" as="sourcePoint" />
+            <mxPoint x="650" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48Nk2eateA9YyvYsNSkh-67" value="挂载" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-66">
+          <mxGeometry x="-0.3436" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48Nk2eateA9YyvYsNSkh-68" value="&lt;b&gt;Pod生命周期&lt;/b&gt;&lt;div&gt;&lt;div&gt;Init 0~3&lt;/div&gt;&lt;div&gt;Pending&lt;/div&gt;&lt;div&gt;Running&lt;/div&gt;&lt;div&gt;Completed&lt;/div&gt;&lt;div&gt;Error&lt;/div&gt;&lt;div&gt;Terminating 0~3&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
+          <mxGeometry x="660" y="60" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="48Nk2eateA9YyvYsNSkh-69" value="&lt;b&gt;Job生命周期&lt;/b&gt;&lt;div&gt;&lt;div&gt;Created&lt;/div&gt;&lt;div&gt;Running&lt;/div&gt;&lt;div&gt;Failed&lt;/div&gt;&lt;div&gt;Succeeded&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
+          <mxGeometry x="230" y="40" width="90" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
