@@ -29,10 +29,10 @@
           <mxGeometry x="45.67" y="40" width="67" height="67" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-12" value="API服务器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
-          <mxGeometry x="30" y="160" width="120" height="55" as="geometry" />
+          <mxGeometry x="40" y="150" width="120" height="55" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-13" value="&lt;b&gt;Job&lt;/b&gt;&lt;div&gt;llama3-70b-128node-xiaoming&lt;br&gt;&lt;/div&gt;" style="shape=card;whiteSpace=wrap;html=1;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
-          <mxGeometry x="200" y="151.25" width="180" height="72.5" as="geometry" />
+          <mxGeometry x="240" y="150" width="140" height="72.5" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-23" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
           <mxGeometry x="510" y="380" width="60" height="30" as="geometry" />
@@ -129,22 +129,40 @@
           <mxGeometry x="660" y="60" width="150" height="100" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-69" value="&lt;b&gt;Job生命周期&lt;/b&gt;&lt;div&gt;&lt;div&gt;Created&lt;/div&gt;&lt;div&gt;Running&lt;/div&gt;&lt;div&gt;Failed&lt;/div&gt;&lt;div&gt;Succeeded&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
-          <mxGeometry x="230" y="40" width="90" height="100" as="geometry" />
+          <mxGeometry x="250" y="40" width="90" height="100" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-80" value="如何访问对象存储：&#xa;kubectl exec -it llama3-70b-128node-xiaoming-master-0 bash; cd 对象存储目录" style="text;whiteSpace=wrap;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
           <mxGeometry x="650" y="420" width="550" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="48Nk2eateA9YyvYsNSkh-89" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="48Nk2eateA9YyvYsNSkh-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="185.75" as="sourcePoint" />
+            <mxPoint x="230" y="185.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48Nk2eateA9YyvYsNSkh-91" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="48Nk2eateA9YyvYsNSkh-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="185.75" as="sourcePoint" />
+            <mxPoint x="450" y="185.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-70" value="小明" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="-70" y="70" width="50" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-78" value="kubectl logs llama3-70b-128node-xiaoming-master-0&#xa;kubectl logs llama3-70b-128node-xiaoming-worker-126 #Megatron loss在最后一个worker打印" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-78" value="查询pod状态&#xa;kubectl logs llama3-70b-128node-xiaoming-master-0&#xa;kubectl logs llama3-70b-128node-xiaoming-worker-126 #Megatron loss在最后一个worker打印" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="690" y="530" width="550" height="40" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-83" value="&lt;div&gt;kubectl get PyTorchJob&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="430" y="-130" width="310" height="20" as="geometry" />
+          <mxGeometry x="600" y="490" width="310" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-85" value="&lt;div&gt;kubectl get PyTorchJob&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="750" y="-120" width="310" height="20" as="geometry" />
+        <mxCell id="48Nk2eateA9YyvYsNSkh-85" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;kubectl get pods&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="510" width="310" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="48Nk2eateA9YyvYsNSkh-87" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="119.5" as="sourcePoint" />
+            <mxPoint x="370" y="120" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
