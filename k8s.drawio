@@ -125,7 +125,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-68" value="&lt;b&gt;Pod生命周期&lt;/b&gt;&lt;div&gt;&lt;div&gt;Init 0~3&lt;/div&gt;&lt;div&gt;Pending&lt;/div&gt;&lt;div&gt;Running&lt;/div&gt;&lt;div&gt;Completed&lt;/div&gt;&lt;div&gt;Error&lt;/div&gt;&lt;div&gt;Terminating 0~3&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-68" value="&lt;b&gt;Pod生命周期&lt;/b&gt;&lt;div&gt;&lt;div&gt;Pending&lt;/div&gt;&lt;div&gt;&lt;div&gt;Init 0~3&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Running&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Completed&lt;/div&gt;&lt;div&gt;Error&lt;/div&gt;&lt;div&gt;Terminating 0~3&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
           <mxGeometry x="660" y="60" width="150" height="100" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-69" value="&lt;b&gt;Job生命周期&lt;/b&gt;&lt;div&gt;&lt;div&gt;Created&lt;/div&gt;&lt;div&gt;Running&lt;/div&gt;&lt;div&gt;Failed&lt;/div&gt;&lt;div&gt;Succeeded&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
