@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.7">
   <diagram name="第 1 页" id="v_rf210XtzXQO-0uFHd5">
-    <mxGraphModel dx="2862" dy="1047" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3269" dy="1256" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -242,10 +242,10 @@
           <mxGeometry x="1081" y="1550" width="90" height="37.5" as="geometry" />
         </mxCell>
         <mxCell id="Rxh7XKzHP8LFKw5AA_ND-190" value="threadIdx.x连续的thread属于同一个warp，同一个warp的thread在C中&lt;b style=&quot;font-size: 15px;&quot;&gt;不连续&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
-          <mxGeometry x="1200" y="1549" width="240" height="20" as="geometry" />
+          <mxGeometry x="1136" y="1615" width="300" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Rxh7XKzHP8LFKw5AA_ND-191" value="threadIdx.x连续的thread属于同一个warp，同一个warp的thread在C中&lt;b style=&quot;font-size: 15px;&quot;&gt;连续&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
-          <mxGeometry x="1260" y="905" width="240" height="20" as="geometry" />
+          <mxGeometry x="1180" y="934" width="290" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Rxh7XKzHP8LFKw5AA_ND-192" value="原始版本" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=29;" vertex="1" parent="1">
           <mxGeometry x="-294" y="1080" width="212" height="30" as="geometry" />
