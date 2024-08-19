@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.7">
   <diagram name="第 1 页" id="JENwh_ecXETzRXdGQSSy">
-    <mxGraphModel dx="3075" dy="2135" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3263" dy="2233" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -16,8 +16,8 @@
         <mxCell id="48Nk2eateA9YyvYsNSkh-10" value="K8S" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="386" y="-396" width="1200" height="980" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-80" value="如何访问对象存储：&#xa;kubectl exec -it llama3-70b-128node-xiaoming-master-0 bash; cd 对象存储目录" style="text;whiteSpace=wrap;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
-          <mxGeometry x="650" y="420" width="550" height="30" as="geometry" />
+        <mxCell id="48Nk2eateA9YyvYsNSkh-80" value="如何访问对象存储?进入任意一个pod：&#xa;kubectl exec -it llama3-70b-128node-xiaoming-master-0 bash; cd 对象存储目录" style="text;whiteSpace=wrap;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
+          <mxGeometry x="749" y="710" width="550" height="30" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-48" value="" style="group" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-10">
           <mxGeometry x="574" y="220" width="150" height="110" as="geometry" />
