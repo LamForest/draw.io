@@ -1,168 +1,249 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.7">
   <diagram name="第 1 页" id="JENwh_ecXETzRXdGQSSy">
-    <mxGraphModel dx="3263" dy="2233" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2423" dy="1866" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="48Nk2eateA9YyvYsNSkh-6" value="&lt;div&gt;...&lt;/div&gt;&lt;div&gt;kind: PyTorchJob&lt;/div&gt;&lt;div&gt;metadata:&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;name:&amp;nbsp;&lt;span style=&quot;text-align: center; background-color: initial;&quot;&gt;llama3-70b-128node-xiaoming #Job名字&lt;/span&gt;&lt;/div&gt;&lt;div&gt;spec:&lt;/div&gt;&lt;div&gt;&amp;nbsp; pytorchReplicaSpecs:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; Master:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; replicas: 1&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; nodeSelector:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; kubernetes.io/role: qianfan-new&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;containers:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - name: pytorch&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; image: registry.baidubce.com/cce-ai-native/aiak-kl3:20240710&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; command:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - bash&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - /mnt/cfs_bj/lijie/work/icode/baidu/third-party/Kunlun-Megatron-LM/qinduohao/script/gao_run_llama3_70b_bf16_0806_restart.sh&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; volumeMounts:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - name: rapidfs-p800&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; mountPath: /mnt/rapidfs/P800&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;....&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; Worker:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; replicas: 127&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-6" value="&lt;div&gt;...&lt;/div&gt;&lt;div&gt;kind: PyTorchJob&lt;/div&gt;&lt;div&gt;metadata:&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;name:&amp;nbsp;&lt;span style=&quot;text-align: center; background-color: initial;&quot;&gt;llama3-70b-128node-xiaoming #Job名字&lt;/span&gt;&lt;/div&gt;&lt;div&gt;spec:&lt;/div&gt;&lt;div&gt;&amp;nbsp; pytorchReplicaSpecs:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; Master:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; replicas: 1&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; nodeSelector:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; kubernetes.io/role: qianfan-new&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;containers:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - name: pytorch&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; image: registry.baidubce.com/cce-ai-native/aiak-kl3:20240710&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; command:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - bash&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - /mnt/cfs_bj/lijie/work/icode/baidu/third-party/Kunlun-Megatron-LM/qinduohao/script/gao_run_llama3_70b_bf16_0806_restart.sh&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; volumeMounts:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - name: rapidfs-p800&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; mountPath: /mnt/rapidfs/P800&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;....&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; Worker:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; replicas: 127&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-440" y="22" width="440" height="410" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-7" value="llama3-70b-128node-xiaoming.yaml" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF0303;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-7" value="llama3-70b-128node-xiaoming.yaml" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF0303;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="-362" y="6" width="230" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-9" value="kubectl apply -f xiaoming.yaml #启动Job&lt;div&gt;kubectl delete -f xiaoming.yaml #删除Job&lt;/div&gt;&lt;div&gt;kubectl delete PyTorchJob&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;llama3-70b-128node-xiaoming&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&amp;nbsp;#启动Job&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-9" value="kubectl apply -f xiaoming.yaml #启动Job&lt;div&gt;kubectl delete -f xiaoming.yaml #删除Job&lt;/div&gt;&lt;div&gt;kubectl delete PyTorchJob&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;llama3-70b-128node-xiaoming&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&amp;nbsp;#启动Job&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-40" y="110" width="390" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-10" value="K8S" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="386" y="-396" width="1200" height="980" as="geometry" />
+        <mxCell id="48Nk2eateA9YyvYsNSkh-10" value="K8S" style="swimlane;whiteSpace=wrap;html=1;direction=south;" parent="1" vertex="1">
+          <mxGeometry x="332" y="-396" width="1254" height="980" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-80" value="如何访问对象存储?进入任意一个pod：&#xa;kubectl exec -it llama3-70b-128node-xiaoming-master-0 bash; cd 对象存储目录" style="text;whiteSpace=wrap;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-80" value="如何访问对象存储?进入任意一个pod：&#xa;kubectl exec -it llama3-70b-128node-xiaoming-master-0 bash; cd 对象存储目录" style="text;whiteSpace=wrap;" parent="48Nk2eateA9YyvYsNSkh-10" vertex="1">
           <mxGeometry x="749" y="710" width="550" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-48" value="" style="group" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-10">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-48" value="" style="group" parent="48Nk2eateA9YyvYsNSkh-10" vertex="1" connectable="0">
           <mxGeometry x="574" y="220" width="150" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-49" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-48">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-49" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" parent="48Nk2eateA9YyvYsNSkh-48" vertex="1">
           <mxGeometry width="150" height="110.00000000000001" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-50" value="Node&lt;div&gt;192.168.112.?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="48Nk2eateA9YyvYsNSkh-48">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-50" value="Node&lt;div&gt;192.168.112.?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="48Nk2eateA9YyvYsNSkh-48" vertex="1">
           <mxGeometry x="25" y="22" width="108.33333333333334" height="66" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-15" value="&lt;b&gt;Pod&lt;/b&gt;&lt;div&gt;&lt;b&gt;master-0&lt;/b&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-48">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-15" value="&lt;b&gt;Pod&lt;/b&gt;&lt;div&gt;&lt;b&gt;master-0&lt;/b&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="48Nk2eateA9YyvYsNSkh-48" vertex="1">
           <mxGeometry x="45.67" y="40" width="67" height="67" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-12" value="API服务器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-12" value="API服务器" style="rounded=0;whiteSpace=wrap;html=1;" parent="48Nk2eateA9YyvYsNSkh-10" vertex="1">
           <mxGeometry x="154" y="340" width="120" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-13" value="&lt;b&gt;Job&lt;/b&gt;&lt;div&gt;llama3-70b-128node-xiaoming&lt;br&gt;&lt;/div&gt;" style="shape=card;whiteSpace=wrap;html=1;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-13" value="&lt;b&gt;PyTorchJob&lt;/b&gt;&lt;div&gt;llama3-70b-128node-xiaoming&lt;br&gt;&lt;/div&gt;" style="shape=card;whiteSpace=wrap;html=1;" parent="48Nk2eateA9YyvYsNSkh-10" vertex="1">
           <mxGeometry x="354" y="340" width="140" height="72.5" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-23" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-23" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" parent="48Nk2eateA9YyvYsNSkh-10" vertex="1">
           <mxGeometry x="624" y="570" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-27" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
-          <mxGeometry x="174" y="520" width="90" height="50" as="geometry" />
+        <mxCell id="48Nk2eateA9YyvYsNSkh-38" value="Nodes(kubectl get nodes -owide)" style="swimlane;whiteSpace=wrap;html=1;" parent="48Nk2eateA9YyvYsNSkh-10" vertex="1">
+          <mxGeometry x="48" y="480" width="490" height="322" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-28" value="Node&lt;div&gt;192.168.112.0&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
-          <mxGeometry x="189" y="530" width="60" height="30" as="geometry" />
+        <mxCell id="LwYmsq861Xcj32AT4gmF-25" value="" style="group" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-38">
+          <mxGeometry x="17" y="40" width="182" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-31" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
-          <mxGeometry x="284" y="520" width="90" height="50" as="geometry" />
+        <mxCell id="LwYmsq861Xcj32AT4gmF-26" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" vertex="1" parent="LwYmsq861Xcj32AT4gmF-25">
+          <mxGeometry width="109.39890710382514" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-32" value="Node&lt;div&gt;192.168.112.1&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
-          <mxGeometry x="299" y="530" width="65" height="30" as="geometry" />
+        <mxCell id="LwYmsq861Xcj32AT4gmF-27" value="Node&lt;div&gt;192.168.112.10&lt;/div&gt;&lt;div&gt;role: qianfan-new&lt;/div&gt;&lt;div&gt;label: tianlin=yes&lt;br&gt;&lt;/div&gt;&lt;div&gt;status: Ready&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="LwYmsq861Xcj32AT4gmF-25">
+          <mxGeometry x="-24.40590163934426" y="16" width="158.2107103825137" height="37.47" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-35" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
-          <mxGeometry x="188" y="620" width="60" height="30" as="geometry" />
+        <mxCell id="LwYmsq861Xcj32AT4gmF-39" value="" style="group" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-38">
+          <mxGeometry x="299" y="43" width="182" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-37" value="" style="group" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-10">
-          <mxGeometry x="284" y="620" width="90" height="50" as="geometry" />
+        <mxCell id="LwYmsq861Xcj32AT4gmF-40" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" vertex="1" parent="LwYmsq861Xcj32AT4gmF-39">
+          <mxGeometry width="109.39890710382514" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-33" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-37">
-          <mxGeometry width="90" height="50" as="geometry" />
+        <mxCell id="LwYmsq861Xcj32AT4gmF-41" value="Node&lt;div&gt;192.168.112.12&lt;/div&gt;&lt;div&gt;role: qianfan-new&lt;/div&gt;&lt;div&gt;label: tianlin=yes&lt;br&gt;&lt;/div&gt;&lt;div&gt;status: Ready&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="LwYmsq861Xcj32AT4gmF-39">
+          <mxGeometry x="-24.40590163934426" y="16" width="158.2107103825137" height="37.47" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-34" value="Node&lt;div&gt;192.168.112.255&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="48Nk2eateA9YyvYsNSkh-37">
-          <mxGeometry x="15" y="10" width="65" height="30" as="geometry" />
+        <mxCell id="LwYmsq861Xcj32AT4gmF-42" value="" style="group" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-38">
+          <mxGeometry x="17" y="163" width="182" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-38" value="Nodes" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
-          <mxGeometry x="154" y="480" width="270" height="220" as="geometry" />
+        <mxCell id="LwYmsq861Xcj32AT4gmF-43" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" vertex="1" parent="LwYmsq861Xcj32AT4gmF-42">
+          <mxGeometry width="109.39890710382514" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-39" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="48Nk2eateA9YyvYsNSkh-10">
+        <mxCell id="LwYmsq861Xcj32AT4gmF-44" value="Node&lt;div&gt;192.168.112.125&lt;/div&gt;&lt;div&gt;role: yehua&lt;/div&gt;&lt;div&gt;status: Ready&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="LwYmsq861Xcj32AT4gmF-42">
+          <mxGeometry x="-24.40590163934426" y="16" width="158.2107103825137" height="37.47" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-45" value="" style="group" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-38">
+          <mxGeometry x="157" y="164" width="182" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-46" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" vertex="1" parent="LwYmsq861Xcj32AT4gmF-45">
+          <mxGeometry width="109.39890710382514" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-47" value="Node&lt;div&gt;192.168.112.137&lt;/div&gt;&lt;div&gt;role: noc_idle&lt;/div&gt;&lt;div&gt;status: Ready&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="LwYmsq861Xcj32AT4gmF-45">
+          <mxGeometry x="-24.40590163934426" y="16" width="158.2107103825137" height="37.47" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-48" value="" style="group" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-38">
+          <mxGeometry x="308" y="163" width="182" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-49" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" vertex="1" parent="LwYmsq861Xcj32AT4gmF-48">
+          <mxGeometry width="109.39890710382514" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-50" value="Node&lt;div&gt;192.168.112.120&lt;/div&gt;&lt;div&gt;role:&amp;nbsp;hightemp&lt;/div&gt;&lt;div&gt;status: Ready,&amp;nbsp;SchedulingDisabled&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="LwYmsq861Xcj32AT4gmF-48">
+          <mxGeometry x="-24.40590163934426" y="16" width="158.2107103825137" height="37.47" as="geometry" />
+        </mxCell>
+        <mxCell id="48Nk2eateA9YyvYsNSkh-35" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" parent="48Nk2eateA9YyvYsNSkh-38" vertex="1">
+          <mxGeometry x="184" y="123" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-51" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" vertex="1" parent="48Nk2eateA9YyvYsNSkh-38">
+          <mxGeometry x="184" y="265" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="48Nk2eateA9YyvYsNSkh-39" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="48Nk2eateA9YyvYsNSkh-10" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="434" y="600" as="sourcePoint" />
+            <mxPoint x="459" y="600" as="sourcePoint" />
             <mxPoint x="564" y="600" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-40" value="nodeSelector" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-39">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-40" value="nodeSelector" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="48Nk2eateA9YyvYsNSkh-39" vertex="1" connectable="0">
           <mxGeometry x="0.015" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-52" value="" style="group" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-10">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-52" value="" style="group" parent="48Nk2eateA9YyvYsNSkh-10" vertex="1" connectable="0">
           <mxGeometry x="574" y="340" width="150" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-53" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-52">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-53" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" parent="48Nk2eateA9YyvYsNSkh-52" vertex="1">
           <mxGeometry width="150" height="110.00000000000001" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-54" value="Node&lt;div&gt;192.168.112.?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="48Nk2eateA9YyvYsNSkh-52">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-54" value="Node&lt;div&gt;192.168.112.?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="48Nk2eateA9YyvYsNSkh-52" vertex="1">
           <mxGeometry x="25" y="22" width="108.33333333333334" height="66" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-55" value="&lt;b&gt;Pod&lt;/b&gt;&lt;div&gt;&lt;b&gt;worker-0&lt;/b&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-52">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-55" value="&lt;b&gt;Pod&lt;/b&gt;&lt;div&gt;&lt;b&gt;worker-0&lt;/b&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="48Nk2eateA9YyvYsNSkh-52" vertex="1">
           <mxGeometry x="45.67" y="40" width="67" height="67" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-56" value="" style="group" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-10">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-56" value="" style="group" parent="48Nk2eateA9YyvYsNSkh-10" vertex="1" connectable="0">
           <mxGeometry x="574" y="460" width="150" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-57" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-56">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-57" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" parent="48Nk2eateA9YyvYsNSkh-56" vertex="1">
           <mxGeometry width="150" height="110.00000000000001" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-58" value="Node&lt;div&gt;192.168.112.?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="48Nk2eateA9YyvYsNSkh-56">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-58" value="Node&lt;div&gt;192.168.112.?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="48Nk2eateA9YyvYsNSkh-56" vertex="1">
           <mxGeometry x="25" y="22" width="108.33333333333334" height="66" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-59" value="&lt;b&gt;Pod&lt;/b&gt;&lt;div&gt;&lt;b&gt;worker-1&lt;/b&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-56">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-59" value="&lt;b&gt;Pod&lt;/b&gt;&lt;div&gt;&lt;b&gt;worker-1&lt;/b&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="48Nk2eateA9YyvYsNSkh-56" vertex="1">
           <mxGeometry x="45.67" y="40" width="67" height="67" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-60" value="" style="group" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-10">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-60" value="" style="group" parent="48Nk2eateA9YyvYsNSkh-10" vertex="1" connectable="0">
           <mxGeometry x="579" y="600" width="150" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-61" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-60">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-61" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" parent="48Nk2eateA9YyvYsNSkh-60" vertex="1">
           <mxGeometry width="150" height="110.00000000000001" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-62" value="Node&lt;div&gt;192.168.112.?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="48Nk2eateA9YyvYsNSkh-60">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-62" value="Node&lt;div&gt;192.168.112.?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="48Nk2eateA9YyvYsNSkh-60" vertex="1">
           <mxGeometry x="25" y="22" width="108.33333333333334" height="66" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-63" value="&lt;b&gt;Pod&lt;/b&gt;&lt;div&gt;&lt;b&gt;worker-126&lt;/b&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-60">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-63" value="&lt;b&gt;Pod&lt;/b&gt;&lt;div&gt;&lt;b&gt;worker-126&lt;/b&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="48Nk2eateA9YyvYsNSkh-60" vertex="1">
           <mxGeometry x="45.67" y="40" width="67" height="67" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-65" value="&lt;b&gt;对象存储&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;数据集&lt;/div&gt;&lt;div&gt;ckpt&lt;/div&gt;&lt;div&gt;日志&lt;/div&gt;&lt;div&gt;....&lt;/div&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-65" value="&lt;b&gt;对象存储&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;数据集&lt;/div&gt;&lt;div&gt;ckpt&lt;/div&gt;&lt;div&gt;日志&lt;/div&gt;&lt;div&gt;....&lt;/div&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="48Nk2eateA9YyvYsNSkh-10" vertex="1">
           <mxGeometry x="914" y="440" width="140" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-66" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="48Nk2eateA9YyvYsNSkh-10">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-66" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="48Nk2eateA9YyvYsNSkh-10" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="894" y="520" as="sourcePoint" />
-            <mxPoint x="764" y="520" as="targetPoint" />
+            <mxPoint x="730" y="520" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-67" value="挂载" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-66">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-67" value="挂载" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="48Nk2eateA9YyvYsNSkh-66" vertex="1" connectable="0">
           <mxGeometry x="-0.3436" y="-3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-68" value="&lt;b&gt;Pod生命周期&lt;/b&gt;&lt;div&gt;&lt;div&gt;Pending&lt;/div&gt;&lt;div&gt;&lt;div&gt;Init 0~3&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Running&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Completed&lt;/div&gt;&lt;div&gt;Error&lt;/div&gt;&lt;div&gt;Terminating 0~3&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
-          <mxGeometry x="774" y="250" width="150" height="100" as="geometry" />
+        <mxCell id="48Nk2eateA9YyvYsNSkh-68" value="&lt;b&gt;Pod生命周期&lt;/b&gt;&lt;div&gt;&lt;div&gt;Pending&lt;/div&gt;&lt;div&gt;&lt;div&gt;Init 0~3&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Running&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Completed&lt;/div&gt;&lt;div&gt;Error&lt;/div&gt;&lt;div&gt;Terminating 0~3&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="48Nk2eateA9YyvYsNSkh-10" vertex="1">
+          <mxGeometry x="709" y="157" width="150" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-69" value="&lt;b&gt;Job生命周期&lt;/b&gt;&lt;div&gt;&lt;div&gt;Created&lt;/div&gt;&lt;div&gt;Running&lt;/div&gt;&lt;div&gt;Failed&lt;/div&gt;&lt;div&gt;Succeeded&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
-          <mxGeometry x="364" y="230" width="90" height="100" as="geometry" />
+        <mxCell id="48Nk2eateA9YyvYsNSkh-69" value="&lt;b&gt;PyTorchJob生命周期&lt;/b&gt;&lt;div&gt;&lt;div&gt;Created&lt;/div&gt;&lt;div&gt;Running&lt;/div&gt;&lt;div&gt;Failed&lt;/div&gt;&lt;div&gt;Succeeded&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="48Nk2eateA9YyvYsNSkh-10" vertex="1">
+          <mxGeometry x="364" y="230" width="128" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-89" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="48Nk2eateA9YyvYsNSkh-10">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-89" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="48Nk2eateA9YyvYsNSkh-10" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="284" y="375.75" as="sourcePoint" />
             <mxPoint x="344" y="375.75" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-91" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="48Nk2eateA9YyvYsNSkh-10">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-91" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="48Nk2eateA9YyvYsNSkh-10" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="504" y="375.75" as="sourcePoint" />
             <mxPoint x="564" y="375.75" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-87" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="48Nk2eateA9YyvYsNSkh-10">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-87" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="48Nk2eateA9YyvYsNSkh-10" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-25" y="504" as="sourcePoint" />
             <mxPoint x="45" y="504.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-70" value="小明" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="LwYmsq861Xcj32AT4gmF-4" value="" style="group" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-10">
+          <mxGeometry x="334" y="38" width="382" height="188" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-2" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="LwYmsq861Xcj32AT4gmF-4">
+          <mxGeometry x="8" width="366" height="131" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-1" value="镜像仓库&amp;nbsp;registry.baidubce.com" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="LwYmsq861Xcj32AT4gmF-4">
+          <mxGeometry x="89" width="204" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-3" value="&lt;div&gt;registry.baidubce.com/cce-ai-native/aiak-kl3:20240630&lt;br&gt;&lt;/div&gt;registry.baidubce.com/cce-ai-native/aiak-kl3:20240710&lt;div&gt;registry.baidubce.com/cce-ai-native/aiak-kl3:20240724&lt;br&gt;&lt;/div&gt;&lt;div&gt;registry.baidubce.com/cce-ai-native/aiak-kl3:20240806&lt;br&gt;&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="LwYmsq861Xcj32AT4gmF-4">
+          <mxGeometry y="25" width="382" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-5" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="48Nk2eateA9YyvYsNSkh-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="904" y="462" as="sourcePoint" />
+            <mxPoint x="730" y="393" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-6" value="挂载" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LwYmsq861Xcj32AT4gmF-5">
+          <mxGeometry x="-0.3436" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-7" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="48Nk2eateA9YyvYsNSkh-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="914" y="408" as="sourcePoint" />
+            <mxPoint x="730" y="279" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-8" value="挂载" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LwYmsq861Xcj32AT4gmF-7">
+          <mxGeometry x="-0.3436" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-9" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="48Nk2eateA9YyvYsNSkh-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="897" y="570" as="sourcePoint" />
+            <mxPoint x="733" y="644" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-10" value="挂载" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LwYmsq861Xcj32AT4gmF-9">
+          <mxGeometry x="-0.3436" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48Nk2eateA9YyvYsNSkh-70" value="小明" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="-70" y="70" width="50" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-78" value="查询pod状态&#xa;kubectl logs llama3-70b-128node-xiaoming-master-0&#xa;kubectl logs llama3-70b-128node-xiaoming-worker-126 #Megatron loss在最后一个worker打印" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-78" value="查询pod状态&#xa;kubectl logs llama3-70b-128node-xiaoming-master-0&#xa;kubectl logs llama3-70b-128node-xiaoming-worker-126 #Megatron loss在最后一个worker打印" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="690" y="530" width="550" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-83" value="&lt;div&gt;kubectl get PyTorchJob&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-83" value="&lt;div&gt;kubectl get PyTorchJob&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="600" y="490" width="310" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-85" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;kubectl get pods&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-85" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;kubectl get pods&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="580" y="510" width="310" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-36" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="532" y="124" width="182" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-37" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" vertex="1" parent="LwYmsq861Xcj32AT4gmF-36">
+          <mxGeometry width="109.39890710382514" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-38" value="Node&lt;div&gt;192.168.112.11&lt;/div&gt;&lt;div&gt;role: qianfan-new&lt;/div&gt;&lt;div&gt;label: tianlin=yes&lt;/div&gt;&lt;div&gt;status: Ready&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="LwYmsq861Xcj32AT4gmF-36">
+          <mxGeometry x="-24.40590163934426" y="16" width="158.2107103825137" height="37.47" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
