@@ -67,7 +67,7 @@
         <mxCell id="LwYmsq861Xcj32AT4gmF-43" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" vertex="1" parent="LwYmsq861Xcj32AT4gmF-42">
           <mxGeometry width="109.39890710382514" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="LwYmsq861Xcj32AT4gmF-44" value="Node&lt;div&gt;192.168.112.125&lt;/div&gt;&lt;div&gt;role: yehua&lt;/div&gt;&lt;div&gt;status: Ready&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="LwYmsq861Xcj32AT4gmF-42">
+        <mxCell id="LwYmsq861Xcj32AT4gmF-44" value="Node&lt;div&gt;192.168.112.108&lt;/div&gt;&lt;div&gt;role: qianfan-new&lt;/div&gt;&lt;div&gt;status: Ready&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="LwYmsq861Xcj32AT4gmF-42">
           <mxGeometry x="-24.40590163934426" y="16" width="158.2107103825137" height="37.47" as="geometry" />
         </mxCell>
         <mxCell id="LwYmsq861Xcj32AT4gmF-45" value="" style="group" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-38">
@@ -93,6 +93,9 @@
         </mxCell>
         <mxCell id="LwYmsq861Xcj32AT4gmF-51" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" vertex="1" parent="48Nk2eateA9YyvYsNSkh-38">
           <mxGeometry x="184" y="265" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-54" value="停止调度，可以通过cordon/uncordon切换" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-38">
+          <mxGeometry x="304" y="250" width="139" height="28" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-39" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="48Nk2eateA9YyvYsNSkh-10" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -156,7 +159,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-68" value="&lt;b&gt;Pod生命周期&lt;/b&gt;&lt;div&gt;&lt;div&gt;Pending&lt;/div&gt;&lt;div&gt;&lt;div&gt;Init 0~3&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Running&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Completed&lt;/div&gt;&lt;div&gt;Error&lt;/div&gt;&lt;div&gt;Terminating 0~3&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="48Nk2eateA9YyvYsNSkh-10" vertex="1">
-          <mxGeometry x="709" y="157" width="150" height="100" as="geometry" />
+          <mxGeometry x="780" y="120" width="150" height="100" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-69" value="&lt;b&gt;PyTorchJob生命周期&lt;/b&gt;&lt;div&gt;&lt;div&gt;Created&lt;/div&gt;&lt;div&gt;Running&lt;/div&gt;&lt;div&gt;Failed&lt;/div&gt;&lt;div&gt;Succeeded&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="48Nk2eateA9YyvYsNSkh-10" vertex="1">
           <mxGeometry x="364" y="230" width="128" height="100" as="geometry" />
