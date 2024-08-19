@@ -224,6 +224,9 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-53" value="kubernetes.io/role: &quot;qianfan-new&quot;&lt;div&gt;tianlin: yes&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
+          <mxGeometry x="412" y="621" width="187" height="23" as="geometry" />
+        </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-70" value="小明" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="-70" y="70" width="50" height="100" as="geometry" />
         </mxCell>
