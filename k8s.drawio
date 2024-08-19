@@ -25,7 +25,7 @@
         <mxCell id="48Nk2eateA9YyvYsNSkh-49" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" parent="48Nk2eateA9YyvYsNSkh-48" vertex="1">
           <mxGeometry width="150" height="110.00000000000001" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-50" value="Node&lt;div&gt;192.168.112.?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="48Nk2eateA9YyvYsNSkh-48" vertex="1">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-50" value="Node&lt;div&gt;192.168.112.12&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="48Nk2eateA9YyvYsNSkh-48" vertex="1">
           <mxGeometry x="25" y="22" width="108.33333333333334" height="66" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-15" value="&lt;b&gt;Pod&lt;/b&gt;&lt;div&gt;&lt;b&gt;master-0&lt;/b&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="48Nk2eateA9YyvYsNSkh-48" vertex="1">
@@ -41,7 +41,7 @@
           <mxGeometry x="624" y="570" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-38" value="Nodes(kubectl get nodes -owide)" style="swimlane;whiteSpace=wrap;html=1;" parent="48Nk2eateA9YyvYsNSkh-10" vertex="1">
-          <mxGeometry x="48" y="480" width="490" height="322" as="geometry" />
+          <mxGeometry x="48" y="480" width="490" height="386" as="geometry" />
         </mxCell>
         <mxCell id="LwYmsq861Xcj32AT4gmF-25" value="" style="group" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-38">
           <mxGeometry x="17" y="40" width="182" height="80" as="geometry" />
@@ -67,7 +67,7 @@
         <mxCell id="LwYmsq861Xcj32AT4gmF-43" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" vertex="1" parent="LwYmsq861Xcj32AT4gmF-42">
           <mxGeometry width="109.39890710382514" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="LwYmsq861Xcj32AT4gmF-44" value="Node&lt;div&gt;192.168.112.108&lt;/div&gt;&lt;div&gt;role: qianfan-new&lt;/div&gt;&lt;div&gt;status: Ready&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="LwYmsq861Xcj32AT4gmF-42">
+        <mxCell id="LwYmsq861Xcj32AT4gmF-44" value="Node&lt;div&gt;192.168.112.108&lt;/div&gt;&lt;div&gt;role: qianfan-new&lt;/div&gt;&lt;div&gt;label: tianlin=yes&lt;br&gt;&lt;/div&gt;&lt;div&gt;status: Ready&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="LwYmsq861Xcj32AT4gmF-42">
           <mxGeometry x="-24.40590163934426" y="16" width="158.2107103825137" height="37.47" as="geometry" />
         </mxCell>
         <mxCell id="LwYmsq861Xcj32AT4gmF-45" value="" style="group" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-38">
@@ -92,10 +92,19 @@
           <mxGeometry x="184" y="123" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="LwYmsq861Xcj32AT4gmF-51" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" vertex="1" parent="48Nk2eateA9YyvYsNSkh-38">
-          <mxGeometry x="184" y="265" width="60" height="30" as="geometry" />
+          <mxGeometry x="190" y="306" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="LwYmsq861Xcj32AT4gmF-54" value="停止调度，可以通过cordon/uncordon切换" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-38">
           <mxGeometry x="304" y="250" width="139" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-56" value="" style="group" vertex="1" connectable="0" parent="48Nk2eateA9YyvYsNSkh-38">
+          <mxGeometry x="17" y="281" width="182" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-57" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" vertex="1" parent="LwYmsq861Xcj32AT4gmF-56">
+          <mxGeometry width="109.39890710382514" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-58" value="Node&lt;div&gt;192.168.112.99&lt;/div&gt;&lt;div&gt;role: qianfan-new&lt;/div&gt;&lt;div&gt;status: Ready&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="LwYmsq861Xcj32AT4gmF-56">
+          <mxGeometry x="-24.40590163934426" y="16" width="158.2107103825137" height="37.47" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-39" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="48Nk2eateA9YyvYsNSkh-10" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -114,7 +123,7 @@
         <mxCell id="48Nk2eateA9YyvYsNSkh-53" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" parent="48Nk2eateA9YyvYsNSkh-52" vertex="1">
           <mxGeometry width="150" height="110.00000000000001" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-54" value="Node&lt;div&gt;192.168.112.?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="48Nk2eateA9YyvYsNSkh-52" vertex="1">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-54" value="Node&lt;div&gt;192.168.112.10&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="48Nk2eateA9YyvYsNSkh-52" vertex="1">
           <mxGeometry x="25" y="22" width="108.33333333333334" height="66" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-55" value="&lt;b&gt;Pod&lt;/b&gt;&lt;div&gt;&lt;b&gt;worker-0&lt;/b&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="48Nk2eateA9YyvYsNSkh-52" vertex="1">
@@ -126,7 +135,7 @@
         <mxCell id="48Nk2eateA9YyvYsNSkh-57" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" parent="48Nk2eateA9YyvYsNSkh-56" vertex="1">
           <mxGeometry width="150" height="110.00000000000001" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-58" value="Node&lt;div&gt;192.168.112.?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="48Nk2eateA9YyvYsNSkh-56" vertex="1">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-58" value="Node&lt;div&gt;192.168.112.108&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="48Nk2eateA9YyvYsNSkh-56" vertex="1">
           <mxGeometry x="25" y="22" width="108.33333333333334" height="66" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-59" value="&lt;b&gt;Pod&lt;/b&gt;&lt;div&gt;&lt;b&gt;worker-1&lt;/b&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="48Nk2eateA9YyvYsNSkh-56" vertex="1">
@@ -138,7 +147,7 @@
         <mxCell id="48Nk2eateA9YyvYsNSkh-61" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;" parent="48Nk2eateA9YyvYsNSkh-60" vertex="1">
           <mxGeometry width="150" height="110.00000000000001" as="geometry" />
         </mxCell>
-        <mxCell id="48Nk2eateA9YyvYsNSkh-62" value="Node&lt;div&gt;192.168.112.?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="48Nk2eateA9YyvYsNSkh-60" vertex="1">
+        <mxCell id="48Nk2eateA9YyvYsNSkh-62" value="Node&lt;div&gt;192.168.112.11&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="48Nk2eateA9YyvYsNSkh-60" vertex="1">
           <mxGeometry x="25" y="22" width="108.33333333333334" height="66" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-63" value="&lt;b&gt;Pod&lt;/b&gt;&lt;div&gt;&lt;b&gt;worker-126&lt;/b&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="48Nk2eateA9YyvYsNSkh-60" vertex="1">
