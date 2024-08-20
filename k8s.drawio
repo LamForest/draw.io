@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.7">
   <diagram name="第 1 页" id="JENwh_ecXETzRXdGQSSy">
-    <mxGraphModel dx="2555" dy="2012" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2770" dy="2115" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -14,7 +14,7 @@
           <mxGeometry x="-40" y="110" width="390" height="20" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-10" value="K8S千卡集群" style="swimlane;whiteSpace=wrap;html=1;direction=west;startSize=32;" parent="1" vertex="1">
-          <mxGeometry x="358" y="-313" width="1270" height="1043" as="geometry" />
+          <mxGeometry x="358" y="-313" width="1270" height="947" as="geometry" />
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-80" value="如何访问对象存储?进入任意一个pod：&#xa;kubectl exec -it llama3-70b-128node-xiaoming-master-0 bash; cd 对象存储目录" style="text;whiteSpace=wrap;" parent="48Nk2eateA9YyvYsNSkh-10" vertex="1">
           <mxGeometry x="835" y="628" width="550" height="30" as="geometry" />
@@ -256,6 +256,17 @@
         </mxCell>
         <mxCell id="LwYmsq861Xcj32AT4gmF-65" value="pod从对象存储加载ckpt，并定期save ckpt" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="48Nk2eateA9YyvYsNSkh-10">
           <mxGeometry x="784" y="281" width="240" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-67" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.482;exitY=0.999;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="48Nk2eateA9YyvYsNSkh-10" source="LwYmsq861Xcj32AT4gmF-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="347" as="sourcePoint" />
+            <mxPoint x="561" y="272" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LwYmsq861Xcj32AT4gmF-68" value="pull" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LwYmsq861Xcj32AT4gmF-67">
+          <mxGeometry x="-0.3436" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="48Nk2eateA9YyvYsNSkh-70" value="小明" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="-70" y="70" width="50" height="100" as="geometry" />
