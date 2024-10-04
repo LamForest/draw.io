@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.16">
   <diagram name="Page-1" id="ea8_HFCyjWWrdcTRc5WG">
-    <mxGraphModel dx="307" dy="1834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="555" dy="2068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -72,6 +72,21 @@
         </mxCell>
         <mxCell id="a883fYa3uRMPi4ix_8bJ-32" value="Forward Prefetching: 假如CPU比较慢，迟迟没有下发下一个AG，那么pytorch会帮你prefetch（但感觉不太有用" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="250" y="430" width="340" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a883fYa3uRMPi4ix_8bJ-46" value="&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;FlatParamHandle&lt;/span&gt;&lt;br&gt;&lt;/div&gt;_init_flat_param_and_metadata" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="760" width="380" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="a883fYa3uRMPi4ix_8bJ-47" value="1. 处理共享的param" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="a883fYa3uRMPi4ix_8bJ-46">
+          <mxGeometry y="30" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a883fYa3uRMPi4ix_8bJ-48" value="2. use_orig_params=True时，加入padding tensor" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="a883fYa3uRMPi4ix_8bJ-46">
+          <mxGeometry y="60" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a883fYa3uRMPi4ix_8bJ-49" value="3. 收集fqn shapes numels is_padding_mask param param_infos 元信息，并记录FlatParameter._init_metadata&lt;div&gt;（为了收集这些元信息，以及处理共享param，虽然params已经作为参数传入了，但还是递归遍历了module）&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="a883fYa3uRMPi4ix_8bJ-46">
+          <mxGeometry y="90" width="380" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="a883fYa3uRMPi4ix_8bJ-50" value="4. 初始化self.flat_param : FlatParameter&lt;div&gt;self.flat_param =&amp;nbsp;self.flatten_tensors_into_flat_param(...)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="a883fYa3uRMPi4ix_8bJ-46">
+          <mxGeometry y="170" width="380" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
