@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.8.0">
   <diagram name="Page-1" id="ea8_HFCyjWWrdcTRc5WG">
-    <mxGraphModel dx="7799" dy="1414" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="10889" dy="2429" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1643,33 +1643,33 @@
         </mxCell>
         <mxCell id="yrUcnwpkVwUua8VSYlJg-473" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-5461" y="327" as="sourcePoint" />
-            <mxPoint x="-5360" y="327" as="targetPoint" />
+            <mxPoint x="-5618" y="1670" as="sourcePoint" />
+            <mxPoint x="-5517" y="1670" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="yrUcnwpkVwUua8VSYlJg-474" value="流之间的等待 s1.wait_stream(s2)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-5345" y="314" width="227" height="28" as="geometry" />
+          <mxGeometry x="-5502" y="1657" width="227" height="28" as="geometry" />
         </mxCell>
         <mxCell id="yrUcnwpkVwUua8VSYlJg-476" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#FF5252;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-5461" y="386" as="sourcePoint" />
-            <mxPoint x="-5360" y="386" as="targetPoint" />
+            <mxPoint x="-5618" y="1729" as="sourcePoint" />
+            <mxPoint x="-5517" y="1729" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="yrUcnwpkVwUua8VSYlJg-477" value="tensor.record_stream(s)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-5345" y="373" width="227" height="28" as="geometry" />
+          <mxGeometry x="-5502" y="1716" width="227" height="28" as="geometry" />
         </mxCell>
         <mxCell id="yrUcnwpkVwUua8VSYlJg-478" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="-5440" y="433" width="51" height="21" as="geometry" />
+          <mxGeometry x="-5597" y="1776" width="51" height="21" as="geometry" />
         </mxCell>
         <mxCell id="yrUcnwpkVwUua8VSYlJg-481" value="释放的显存" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-5352.5" y="432" width="227" height="28" as="geometry" />
+          <mxGeometry x="-5509.5" y="1775" width="227" height="28" as="geometry" />
         </mxCell>
         <mxCell id="yrUcnwpkVwUua8VSYlJg-482" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="-5440" y="491" width="51" height="21" as="geometry" />
+          <mxGeometry x="-5597" y="1834" width="51" height="21" as="geometry" />
         </mxCell>
         <mxCell id="yrUcnwpkVwUua8VSYlJg-483" value="占用的显存&lt;div&gt;或&lt;/div&gt;&lt;div&gt;队列中的Event&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-5352.5" y="490" width="227" height="28" as="geometry" />
+          <mxGeometry x="-5509.5" y="1833" width="227" height="28" as="geometry" />
         </mxCell>
         <mxCell id="yrUcnwpkVwUua8VSYlJg-484" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="yrUcnwpkVwUua8VSYlJg-207">
           <mxGeometry relative="1" as="geometry">
