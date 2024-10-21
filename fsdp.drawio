@@ -1557,7 +1557,7 @@
             <mxPoint x="-2640" y="1077.3400000000001" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="yrUcnwpkVwUua8VSYlJg-436" value="&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;font-size: 19px;&quot;&gt;gradients&lt;/div&gt;&lt;div style=&quot;&quot;&gt;flat_param._saved_grad_shard is not included&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=19;" vertex="1" parent="1">
+        <mxCell id="yrUcnwpkVwUua8VSYlJg-436" value="&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;font-size: 19px;&quot;&gt;gradients&lt;/div&gt;&lt;div style=&quot;&quot;&gt;(flat_param._saved_grad_shard is not included)&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=19;" vertex="1" parent="1">
           <mxGeometry x="-5762" y="1178" width="434" height="65" as="geometry" />
         </mxCell>
         <mxCell id="yrUcnwpkVwUua8VSYlJg-437" value="&lt;div style=&quot;font-size: 19px;&quot;&gt;&lt;div style=&quot;font-size: 19px;&quot;&gt;managed by CudaCachingAllocator&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=19;" vertex="1" parent="1">
