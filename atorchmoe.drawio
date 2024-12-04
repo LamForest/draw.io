@@ -1,9 +1,81 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.8.8">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1">
   <diagram name="第 1 页" id="yQSgDnQ30AHKWMZMZDvX">
-    <mxGraphModel>
+    <mxGraphModel dx="1259" dy="625" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-3" value="token_permutation" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="120" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-4" value="permute" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="300" width="370" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-7" value="tokens [S,K]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="235" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-8" value="indices [S,K]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="414" y="220" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-9" value="token 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="265" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-10" value="token 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="290" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-11" value="token 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="315" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-12" value="token 3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="340" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-25" value="0, 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="265" width="80" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-26" value="1, 3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="290" width="80" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-27" value="1, 3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="315" width="80" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-28" value="2, 3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="340" width="80" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-34" value="0, 2, 1, 3, 1, 3, 2, 3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="389" y="420" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-35" value="0, 3, 1, 5, 2, 6, 4, 7" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="389" y="490" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-37" value="专家所要处理的tokens在flatten_indices中的序号&lt;div&gt;因为flatten_indices的长度是S x K&lt;/div&gt;&lt;div&gt;所以 // K 得到的是在token的序号&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="487.5" width="270" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-38" value="0, 1, 0, 2, 1, 3, 2, 3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="389" y="564.5" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-39" value="token 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="630" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-40" value="token 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="655" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-41" value="token 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="680" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-42" value="token 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="705" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-43" value="token 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="730" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-44" value="token 3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="755" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-45" value="token 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="780" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-46" value="token 3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="805" width="160" height="25" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
