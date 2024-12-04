@@ -202,6 +202,9 @@
         <mxCell id="EtVEkk2F-L9GxOMNLmMU-92" value="grouped_gemm done" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="414" y="2370" width="150" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="EtVEkk2F-L9GxOMNLmMU-93" value="镜像2次 unpermute" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="2440" width="170" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
