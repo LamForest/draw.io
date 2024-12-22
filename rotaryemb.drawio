@@ -1,9 +1,375 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="第 1 页" id="biBTl_rtlfQWN12dwksh">
-    <mxGraphModel>
+    <mxGraphModel dx="1259" dy="676" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="X_7hW94mpVs03wvkvOVI-5" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="290" y="90" width="20" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-6" value="inv_freq_expanded (theta)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="180" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-7" value="$$\theta_0$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="90" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-8" value="$$\theta_1$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="130" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-9" value="$$\theta_{d/2}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="310" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-10" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-12" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="370" y="90" width="30" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-13" value="(B, d/2, 1)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="50" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-14" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="510" y="90" width="20" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-15" value="0" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="90" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-16" value="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="130" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-17" value="S-1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="310" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-18" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-19" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="590" y="90" width="30" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-20" value="(B, 1, S)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="50" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-22" value="position_ids_expanded" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="630" y="190" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-23" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="390" as="sourcePoint" />
+            <mxPoint x="440" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-24" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="340" y="530" width="20" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-25" value="$$0 * \theta_0 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="530" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-28" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="530" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-29" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="680" y="530" width="30" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-30" value="(B, S, d/2)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="480" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-34" value="$$0 * \theta_1 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="466" y="530" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-35" value="$$0 * \theta_{d/2} $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="530" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-36" value="$$1 * \theta_0 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="374" y="590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-37" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="544" y="590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-38" value="$$1 * \theta_1 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-39" value="$$1 * \theta_{d/2} $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="614" y="590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-40" value="$$(S-1) * \theta_0 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="374" y="750" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-41" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="544" y="750" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-42" value="$$(S-1) * \theta_1 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="750" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-43" value="$$(S-1) * \theta_{d/2} $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="614" y="750" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-44" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="544" y="670" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-46" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="820" as="sourcePoint" />
+            <mxPoint x="440" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-47" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="180" y="970" width="20" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-48" value="$$0 * \theta_0 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-49" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-50" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="850" y="970" width="30" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-51" value="$$0 * \theta_1 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="306" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-52" value="$$0 * \theta_{d/2} $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-53" value="$$1 * \theta_0 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="214" y="1030" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-54" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="384" y="1030" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-55" value="$$1 * \theta_1 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="1030" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-56" value="$$1 * \theta_{d/2} $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="454" y="1030" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-57" value="$$(S-1) * \theta_0 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="214" y="1190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-58" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="384" y="1190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-59" value="$$(S-1) * \theta_1 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="1190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-60" value="$$(S-1) * \theta_{d/2} $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="454" y="1190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-61" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="384" y="1110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-62" value="$$0 * \theta_0 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-63" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-64" value="$$0 * \theta_1 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="636" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-65" value="$$0 * \theta_{d/2} $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="780" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-66" value="$$1 * \theta_0 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="544" y="1030" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-67" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="714" y="1030" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-68" value="$$1 * \theta_1 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1030" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-69" value="$$1 * \theta_{d/2} $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="784" y="1030" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-70" value="$$(S-1) * \theta_0 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="544" y="1190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-71" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="714" y="1190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-72" value="$$(S-1) * \theta_1 $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-73" value="$$(S-1) * \theta_{d/2} $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="784" y="1190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-74" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="714" y="1110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-76" value="(B, S, d)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="910" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-77" value="x, (B, S, d)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1221" y="490" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-78" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="530" width="20" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-79" value="$$x_0$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="530" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-80" value="$$x_1$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="530" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-81" value="$$x_{d-1}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="530" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-83" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="530" width="30" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-84" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1220" y="820" as="sourcePoint" />
+            <mxPoint x="1220" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-85" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="530" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-86" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="960" y="970" width="20" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-87" value="$$x_0$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1185" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-88" value="$$x_1$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1235" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-89" value="$$x_{\frac{d}{2}-1}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1345" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-91" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1285" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-95" value="$$x_{d-1}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1131" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-96" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="970" width="30" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-97" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1071" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-98" value="$$x_{\frac{d}{2}}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="970" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-99" value="$$x_{\frac{d}{2}+1}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-101" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1550" y="970" width="20" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-102" value="$$x_0$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-103" value="$$x_1$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1700" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-107" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1770" y="970" width="30" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-109" value="$$-x_2$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1560" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-111" value="$$-x_3$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1610" y="970" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-113" value="举例，若d=4" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="1620" y="940" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-115" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="1240" as="sourcePoint" />
+            <mxPoint x="450" y="1360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-116" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="190" y="1390" width="20" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-117" value="$$cos(0 * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-118" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-119" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1390" width="30" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-120" value="$$cos(0 * \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="316" y="1390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-121" value="$$cos(0 * \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-130" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="394" y="1530" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-131" value="$$cos(0 * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-132" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-133" value="$$cos(0 * \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="646" y="1390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-134" value="$$cos(0 * \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="790" y="1390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-143" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="724" y="1530" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-144" value="(B, S, d)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1330" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-145" value="$$cos(1 * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1450" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-146" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1450" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-147" value="$$cos(1 * \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="316" y="1450" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-148" value="$$cos(1 * \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1450" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-149" value="$$cos(1 * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1450" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-150" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1450" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-151" value="$$cos(1 * \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="646" y="1450" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-152" value="$$cos(1 * \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="790" y="1450" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-153" value="$$cos(0 * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="225" y="1590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-154" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="395" y="1590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-155" value="$$cos(0 * \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="321" y="1590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-156" value="$$cos(0 * \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="465" y="1590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-157" value="$$cos(0 * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="555" y="1590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-158" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="725" y="1590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-159" value="$$cos(0 * \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="651" y="1590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-160" value="$$cos(0 * \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="795" y="1590" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
