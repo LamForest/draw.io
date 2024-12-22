@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="第 1 页" id="biBTl_rtlfQWN12dwksh">
-    <mxGraphModel dx="1259" dy="676" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+    <mxGraphModel dx="1574" dy="845" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -205,13 +205,13 @@
         <mxCell id="X_7hW94mpVs03wvkvOVI-78" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="1060" y="530" width="20" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="X_7hW94mpVs03wvkvOVI-79" value="$$x_0$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="X_7hW94mpVs03wvkvOVI-79" value="$$x_0^0$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1100" y="530" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="X_7hW94mpVs03wvkvOVI-80" value="$$x_1$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="X_7hW94mpVs03wvkvOVI-80" value="$$x_1^0$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1170" y="530" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="X_7hW94mpVs03wvkvOVI-81" value="$$x_{d-1}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="X_7hW94mpVs03wvkvOVI-81" value="$$x^0_{d-1}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1350" y="530" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-83" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
@@ -229,19 +229,19 @@
         <mxCell id="X_7hW94mpVs03wvkvOVI-86" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="960" y="970" width="20" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="X_7hW94mpVs03wvkvOVI-87" value="$$x_0$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="X_7hW94mpVs03wvkvOVI-87" value="$$x_0^0$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1185" y="970" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="X_7hW94mpVs03wvkvOVI-88" value="$$x_1$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="X_7hW94mpVs03wvkvOVI-88" value="$$x_1^0$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1235" y="970" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="X_7hW94mpVs03wvkvOVI-89" value="$$x_{\frac{d}{2}-1}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="X_7hW94mpVs03wvkvOVI-89" value="$$x_{\frac{d}{2}-1}^0$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1345" y="970" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-91" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1285" y="970" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="X_7hW94mpVs03wvkvOVI-95" value="$$x_{d-1}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="X_7hW94mpVs03wvkvOVI-95" value="$$-x^0_{d-1}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1131" y="970" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-96" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
@@ -250,10 +250,10 @@
         <mxCell id="X_7hW94mpVs03wvkvOVI-97" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1071" y="970" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="X_7hW94mpVs03wvkvOVI-98" value="$$x_{\frac{d}{2}}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="X_7hW94mpVs03wvkvOVI-98" value="$$-x^0_{\frac{d}{2}}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="970" y="970" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="X_7hW94mpVs03wvkvOVI-99" value="$$x_{\frac{d}{2}+1}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="X_7hW94mpVs03wvkvOVI-99" value="$$-x^0_{\frac{d}{2}+1}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1020" y="970" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-101" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
@@ -284,91 +284,238 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-116" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="190" y="1390" width="20" height="260" as="geometry" />
+          <mxGeometry x="50" y="1390" width="20" height="260" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-117" value="$$cos(0 * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="220" y="1390" width="60" height="30" as="geometry" />
+          <mxGeometry x="100" y="1390" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-118" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="390" y="1390" width="60" height="30" as="geometry" />
+          <mxGeometry x="305" y="1390" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-119" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="860" y="1390" width="30" height="260" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-120" value="$$cos(0 * \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="316" y="1390" width="60" height="30" as="geometry" />
+          <mxGeometry x="215" y="1390" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-121" value="$$cos(0 * \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="460" y="1390" width="60" height="30" as="geometry" />
+          <mxGeometry x="390" y="1390" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-130" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="394" y="1530" width="60" height="30" as="geometry" />
+          <mxGeometry x="309" y="1530" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-131" value="$$cos(0 * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="550" y="1390" width="60" height="30" as="geometry" />
+          <mxGeometry x="520" y="1390" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-132" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="720" y="1390" width="60" height="30" as="geometry" />
+          <mxGeometry x="710" y="1390" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-133" value="$$cos(0 * \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="646" y="1390" width="60" height="30" as="geometry" />
+          <mxGeometry x="636" y="1390" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-134" value="$$cos(0 * \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="790" y="1390" width="60" height="30" as="geometry" />
+          <mxGeometry x="780" y="1390" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-143" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="724" y="1530" width="60" height="30" as="geometry" />
+          <mxGeometry x="714" y="1530" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="X_7hW94mpVs03wvkvOVI-144" value="(B, S, d)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="520" y="1330" width="60" height="30" as="geometry" />
+        <mxCell id="X_7hW94mpVs03wvkvOVI-144" value="cos, (B, S, d)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1330" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-145" value="$$cos(1 * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="220" y="1450" width="60" height="30" as="geometry" />
+          <mxGeometry x="100" y="1450" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-146" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="390" y="1450" width="60" height="30" as="geometry" />
+          <mxGeometry x="305" y="1450" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-147" value="$$cos(1 * \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="316" y="1450" width="60" height="30" as="geometry" />
+          <mxGeometry x="215" y="1450" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-148" value="$$cos(1 * \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="460" y="1450" width="60" height="30" as="geometry" />
+          <mxGeometry x="390" y="1450" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-149" value="$$cos(1 * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="550" y="1450" width="60" height="30" as="geometry" />
+          <mxGeometry x="520" y="1450" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-150" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="720" y="1450" width="60" height="30" as="geometry" />
+          <mxGeometry x="710" y="1450" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-151" value="$$cos(1 * \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="646" y="1450" width="60" height="30" as="geometry" />
+          <mxGeometry x="636" y="1450" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-152" value="$$cos(1 * \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="790" y="1450" width="60" height="30" as="geometry" />
+          <mxGeometry x="780" y="1450" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="X_7hW94mpVs03wvkvOVI-153" value="$$cos(0 * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="225" y="1590" width="60" height="30" as="geometry" />
+        <mxCell id="X_7hW94mpVs03wvkvOVI-153" value="$$cos((S-1) * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="105" y="1590" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-154" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="1590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-155" value="$$cos((S-1)&amp;nbsp;* \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-156" value="$$cos((S-1)&amp;nbsp;* \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="395" y="1590" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="X_7hW94mpVs03wvkvOVI-155" value="$$cos(0 * \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="321" y="1590" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="X_7hW94mpVs03wvkvOVI-156" value="$$cos(0 * \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="465" y="1590" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="X_7hW94mpVs03wvkvOVI-157" value="$$cos(0 * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="555" y="1590" width="60" height="30" as="geometry" />
+        <mxCell id="X_7hW94mpVs03wvkvOVI-157" value="$$cos((S-1)&amp;nbsp;* \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="525" y="1590" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="X_7hW94mpVs03wvkvOVI-158" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="725" y="1590" width="60" height="30" as="geometry" />
+          <mxGeometry x="715" y="1590" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="X_7hW94mpVs03wvkvOVI-159" value="$$cos(0 * \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="651" y="1590" width="60" height="30" as="geometry" />
+        <mxCell id="X_7hW94mpVs03wvkvOVI-159" value="$$cos((S-1)&amp;nbsp;* \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="641" y="1590" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="X_7hW94mpVs03wvkvOVI-160" value="$$cos(0 * \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="795" y="1590" width="60" height="30" as="geometry" />
+        <mxCell id="X_7hW94mpVs03wvkvOVI-160" value="$$cos((S-1)&amp;nbsp;* \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="785" y="1590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-165" value="$$x_0^1$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1185" y="1020" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-166" value="$$x_1^1$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1235" y="1020" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-167" value="$$x_{\frac{d}{2}-1}^1$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1345" y="1020" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-168" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1285" y="1020" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-169" value="$$-x^1_{d-1}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1131" y="1020" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-170" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1071" y="1020" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-171" value="$$-x^1_{\frac{d}{2}}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="970" y="1020" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-172" value="$$-x^1_{\frac{d}{2}+1}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="1020" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-173" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1760" width="20" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-174" value="$$sin(0 * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1760" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-175" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="315" y="1760" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-176" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1760" width="30" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-177" value="$$sin(0 * \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="225" y="1760" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-178" value="$$sin(0 * \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1760" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-179" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="319" y="1900" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-180" value="$$sin(0 * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="1760" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-181" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1760" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-182" value="$$sin(0 * \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="646" y="1760" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-183" value="$$sin(0 * \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="790" y="1760" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-184" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="724" y="1900" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-185" value="$$sin(1 * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1820" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-186" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="315" y="1820" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-187" value="$$sin(1 * \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="225" y="1820" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-188" value="$$sin(1 * \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1820" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-189" value="$$sin(1 * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="1820" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-190" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1820" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-191" value="$$sin(1 * \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="646" y="1820" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-192" value="$$sin(1 * \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="790" y="1820" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-193" value="$$sin((S-1) * \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="115" y="1960" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-194" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1960" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-195" value="$$sin((S-1)&amp;nbsp;* \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="1960" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-196" value="$$sin((S-1)&amp;nbsp;* \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="405" y="1960" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-197" value="$$sin((S-1)&amp;nbsp;* \theta_0) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="535" y="1960" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-198" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="725" y="1960" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-199" value="$$sin((S-1)&amp;nbsp;* \theta_1) $$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="651" y="1960" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-200" value="$$sin((S-1)&amp;nbsp;* \theta_{d/2} )$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="795" y="1960" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-229" value="sin, (B, S, d)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="495" y="1710" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-230" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="880" y="2090" as="sourcePoint" />
+            <mxPoint x="880" y="2210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-232" value="(x * cos) + (rotate_half(x) * sin)" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="920" y="2130" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-233" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="309" y="2230" width="20" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-234" value="$$cos(0 * \theta_0)x^0_0 -sin(0 * \theta_0)x^0_{\frac{d}{2}}&amp;nbsp;&amp;nbsp;$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="360" y="2230" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-236" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1431" y="2230" width="30" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-264" value="$$cos(0 * \theta_1)x^0_0 - sin(0 * \theta_1) x^0_{\frac{d}{2} + 1}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="570" y="2230" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-266" value="$$cos(0 * \theta_0)x^0_{\frac{d}{2}} + sin(0 * \theta_0) x^0_{0}&amp;nbsp;$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="910" y="2230" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-268" value="$$cos(0 * \theta_1)x^0_{\frac{d}{2}+1} + sin(0 * \theta_1) x^0_{1}&amp;nbsp;$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1146" y="2230" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-269" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="810" y="2230" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-270" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="2230" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X_7hW94mpVs03wvkvOVI-282" value="相隔 d/2 的feature unit是一组rope" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="474" y="2190" width="206" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
