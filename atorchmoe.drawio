@@ -277,6 +277,9 @@
             <mxPoint x="2235" y="292.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="dmjncVchURnw3Mr_ecjm-33" value="indices [EPxS,K]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1900" y="420" width="160" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
