@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.4">
   <diagram name="第 1 页" id="85x8srJIXAwdQdgo-0Si">
-    <mxGraphModel dx="1176" dy="731" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1199" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -465,6 +465,105 @@
         </mxCell>
         <mxCell id="rwEr7i4HbcqDnKhSLj5x-125" value="&lt;div style=&quot;color: rgb(51, 51, 51); background-color: rgb(245, 245, 245); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;第一个环&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(51, 51, 51); background-color: rgb(245, 245, 245); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;0&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;3&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;1&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;5&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;4&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;7&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;6&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;2&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;0&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(51, 51, 51); background-color: rgb(245, 245, 245); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;0 --&amp;gt; 2 --&amp;gt; 6 --&amp;gt; 7 --&amp;gt; 4 --&amp;gt; 5 --&amp;gt; 1 --&amp;gt; 3 --&amp;gt; 0&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(51, 51, 51); background-color: rgb(245, 245, 245); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;第二个环&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(51, 51, 51); background-color: rgb(245, 245, 245); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;0&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;1&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;2&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;3&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;7&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;5&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;6&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;4&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;0&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;4&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;6&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;5&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;7&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;3&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;2&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;1&lt;/span&gt; --&amp;gt; &lt;span style=&quot;color: rgb(156, 93, 39);&quot;&gt;0&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="420" y="230" width="460" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-126" value="rank: SEND" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1950" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-127" value="rank: RECV" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="950" y="1950" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-129" value="GM" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="2150" width="594" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-130" value="recv_cnt: int64&lt;div&gt;RECV rank已经写到dst的数据 index&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="rwEr7i4HbcqDnKhSLj5x-129">
+          <mxGeometry x="16.5" y="50" width="174" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-142" value="src: T*" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="rwEr7i4HbcqDnKhSLj5x-129">
+          <mxGeometry x="295" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-132" value="LM" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="2400" width="650" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-134" value="recv_cnt: int64" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="rwEr7i4HbcqDnKhSLj5x-132">
+          <mxGeometry x="56" y="50" width="95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-139" value="send_cnt: int64" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="rwEr7i4HbcqDnKhSLj5x-132">
+          <mxGeometry x="56" y="200" width="95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-141" value="wait send_cnt - recv_cnt &amp;lt; buffer队列长度" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rwEr7i4HbcqDnKhSLj5x-132">
+          <mxGeometry x="15" y="100" width="290" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-143" value="data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="rwEr7i4HbcqDnKhSLj5x-132">
+          <mxGeometry x="305" y="70" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-158" value="send_cnt += 1&lt;div&gt;LM2GM(send_cnt, 下一个结点的send_cnt)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rwEr7i4HbcqDnKhSLj5x-132">
+          <mxGeometry x="190" y="177.5" width="240" height="22.5" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rwEr7i4HbcqDnKhSLj5x-130" target="rwEr7i4HbcqDnKhSLj5x-134">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-137" value="GM2LM" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="2338" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-144" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rwEr7i4HbcqDnKhSLj5x-142" target="rwEr7i4HbcqDnKhSLj5x-143">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-145" value="GM2LM&lt;div&gt;如果len(data) &amp;lt; len(sub_buffer)，则要分多次搬运&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="414" y="2330" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-147" value="GM" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="965" y="2150" width="594" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-149" value="dst: T*" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="rwEr7i4HbcqDnKhSLj5x-147">
+          <mxGeometry x="325" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-153" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="rwEr7i4HbcqDnKhSLj5x-147">
+          <mxGeometry x="35" y="40" width="165" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-156" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="rwEr7i4HbcqDnKhSLj5x-147">
+          <mxGeometry x="35" y="40" width="55" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-157" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="rwEr7i4HbcqDnKhSLj5x-147">
+          <mxGeometry x="90" y="40" width="55" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-160" value="send_cnt: int64&lt;div&gt;SEND rank已经写到sub_buffer的数据 index&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="rwEr7i4HbcqDnKhSLj5x-147">
+          <mxGeometry x="75" y="90" width="235" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-154" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="rwEr7i4HbcqDnKhSLj5x-143" target="rwEr7i4HbcqDnKhSLj5x-157">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-155" value="LM2GM 写 next_buffer[send_cnt % buffer队列长度[" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="770" y="2325" width="215" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-161" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="rwEr7i4HbcqDnKhSLj5x-139" target="rwEr7i4HbcqDnKhSLj5x-160">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-162" value="LM" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="2400" width="650" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-163" value="send_cnt: int64" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="rwEr7i4HbcqDnKhSLj5x-162">
+          <mxGeometry x="80" y="50" width="95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-164" value="recv_cnt: int64" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="rwEr7i4HbcqDnKhSLj5x-162">
+          <mxGeometry x="80" y="190" width="95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-165" value="wait send_cnt &amp;gt; recv_cnt，即有未接受的数据包&lt;div&gt;2个思考：如果统计wait的次数，是不是就是tracehang的作用了&lt;/div&gt;&lt;div&gt;为什么不把send_cnt放在SEND rank上？这样循环等待要走noc，会慢很多而且可能产生很多数据包冲击noc。&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rwEr7i4HbcqDnKhSLj5x-162">
+          <mxGeometry x="-70" y="120" width="351" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-166" value="data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="rwEr7i4HbcqDnKhSLj5x-162">
+          <mxGeometry x="340" y="80" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-167" value="recv_cnt += 1&lt;div&gt;LM2GM(recv_cnt, SEND结点的recv_cnt)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rwEr7i4HbcqDnKhSLj5x-162">
+          <mxGeometry x="360" y="190" width="240" height="22.5" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-169" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rwEr7i4HbcqDnKhSLj5x-160" target="rwEr7i4HbcqDnKhSLj5x-163">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-174" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="rwEr7i4HbcqDnKhSLj5x-156" target="rwEr7i4HbcqDnKhSLj5x-166">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-175" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rwEr7i4HbcqDnKhSLj5x-166" target="rwEr7i4HbcqDnKhSLj5x-149">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
