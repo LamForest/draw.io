@@ -571,6 +571,18 @@
         <mxCell id="rwEr7i4HbcqDnKhSLj5x-180" value="&lt;div&gt;2个思考：如果统计wait的次数，是不是就是tracehang的作用了&lt;/div&gt;&lt;div&gt;为什么不把send_cnt放在SEND rank上？这样循环等待要走noc，会慢很多而且可能产生很多数据包冲击noc。&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="810" y="2700" width="620" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-181" value="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="384" y="2070" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-182" value="2" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="477" y="2070" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-183" value="3" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="580" y="2070" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rwEr7i4HbcqDnKhSLj5x-185" value="颜色代表步骤" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="2070" width="120" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
