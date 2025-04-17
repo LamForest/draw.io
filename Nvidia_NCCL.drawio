@@ -1734,7 +1734,7 @@
           <mxGeometry x="3383" y="2363" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="aq2oXHg-Kek6pSyMUd83-98" value="cur rank" style="swimlane;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="3292" y="2304" width="543" height="418" as="geometry" />
+          <mxGeometry x="3320" y="2327" width="515" height="395" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
